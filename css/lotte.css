@@ -395,40 +395,6 @@
   font-size: 1.2em;
   line-height: 1;
 }
-.lotte-persona-section.reveal .lotte-persona-kicker,
-.lotte-persona-section.reveal .lotte-persona-card,
-.lotte-persona-section.reveal .lotte-persona-needs article {
-  opacity: 0;
-  transform: translateY(24px);
-}
-.lotte-persona-section.reveal.is-visible .lotte-persona-kicker,
-.lotte-persona-section.reveal.is-visible .lotte-persona-card,
-.lotte-persona-section.reveal.is-visible .lotte-persona-needs article {
-  opacity: 1;
-  transform: translateY(0);
-}
-.lotte-persona-section.reveal .lotte-persona-kicker,
-.lotte-persona-section.reveal .lotte-persona-card,
-.lotte-persona-section.reveal .lotte-persona-needs article {
-  transition: opacity 0.7s ease, transform 0.7s ease, box-shadow 0.45s ease;
-}
-.lotte-persona-section.reveal .lotte-persona-card:nth-child(2) {
-  transition-delay: 0.08s;
-}
-.lotte-persona-section.reveal .lotte-persona-card:nth-child(3) {
-  transition-delay: 0.16s;
-}
-.lotte-persona-section.reveal .lotte-persona-needs article:nth-child(1) {
-  transition-delay: 0.18s;
-}
-.lotte-persona-section.reveal .lotte-persona-needs article:nth-child(2) {
-  transition-delay: 0.26s;
-}
-.lotte-persona-section.reveal.is-visible .lotte-persona-card:hover {
-  transition-delay: 0s;
-  transform: translateY(-8px);
-}
-
 /*롯데 디자인 시스템 영역*/
 .lotte-design-section {
   --lotte-component-height: 44px;
@@ -679,30 +645,9 @@
   height: 1px;
   background: var(--lotte-red);
 }
-.lotte-design-section.reveal .lotte-design-kicker,
-.lotte-design-section.reveal .lotte-design-block {
-  opacity: 0;
-  transform: translateY(24px);
-}
-.lotte-design-section.reveal.is-visible .lotte-design-kicker,
-.lotte-design-section.reveal.is-visible .lotte-design-block {
-  opacity: 1;
-  transform: translateY(0);
-}
-.lotte-design-section.reveal .lotte-design-kicker,
-.lotte-design-section.reveal .lotte-design-block {
-  transition: var(--motion-rise);
-}
-.lotte-design-section.reveal .lotte-design-block:nth-of-type(2) {
-  transition-delay: 0.08s;
-}
-.lotte-design-section.reveal .lotte-design-block:nth-of-type(3) {
-  transition-delay: 0.16s;
-}
-
 /* 롯데 와이어프레임 영역 */
 .lotte-wireframe-section {
-  padding: 76px 18px 92px;
+  padding: 80px 50px 100px;
   color: var(--lotte-ink);
   background: var(--lotte-bg);
 }
@@ -751,24 +696,6 @@
 .lotte-wireframe-shot.is-magnifier-visible .lotte-wireframe-magnifier {
   display: block;
 }
-.lotte-wireframe-section.reveal .lotte-section-kicker,
-.lotte-wireframe-section.reveal .lotte-wireframe-shot {
-  opacity: 0;
-  transform: translateY(24px);
-}
-.lotte-wireframe-section.reveal.is-visible .lotte-section-kicker,
-.lotte-wireframe-section.reveal.is-visible .lotte-wireframe-shot {
-  opacity: 1;
-  transform: translateY(0);
-}
-.lotte-wireframe-section.reveal .lotte-section-kicker,
-.lotte-wireframe-section.reveal .lotte-wireframe-shot {
-  transition: var(--motion-rise);
-}
-.lotte-wireframe-section.reveal .lotte-wireframe-shot--right {
-  transition-delay: 0.08s;
-}
-
 /* 롯데 사이트맵 개선 영역 */
 .lotte-sitemap-section {
   padding: 76px 18px 92px;
@@ -803,88 +730,4 @@
 }
 .lotte-sitemap-figure--wide img {
   width: min(100%, 920px);
-}
-
-/* 롯데 퍼블리싱 개발 영역 */
-.lotte-publishing-section {
-  display: grid;
-  gap: 44px;
-  padding: 76px 18px 92px;
-  color: var(--lotte-ink);
-  background: var(--lotte-bg);
-}
-.lotte-publishing-copy {
-  display: grid;
-  gap: 24px;
-}
-.lotte-publishing-copy h2 {
-  margin: 0;
-  color: var(--lotte-ink);
-  font-size: var(--project-title-font-size);
-  font-weight: 800;
-  line-height: 1.3;
-  letter-spacing: 0;
-}
-.lotte-publishing-copy > p:last-child {
-  margin: 0;
-  color: var(--lotte-ink);
-  font-size: var(--project-body-font-size);
-  font-weight: 500;
-  line-height: 1.7;
-  word-break: keep-all;
-}
-.lotte-device-layout {
-  display: grid;
-  align-items: end;
-  gap: 28px;
-}
-.lotte-device {
-  display: grid;
-  gap: 10px;
-  margin: 0;
-}
-.lotte-device-caption {
-  display: flex;
-  flex-direction: column;
-  gap: 4px;
-  color: var(--lotte-ink);
-  line-height: 1;
-}
-.lotte-device-title {
-  display: inline-flex;
-  align-items: center;
-  gap: 6px;
-  color: var(--lotte-ink);
-}
-.lotte-device-icon {
-  color: var(--lotte-red);
-  font-size: 20px;
-  line-height: 1;
-}
-.lotte-device-title strong {
-  color: var(--lotte-ink);
-  font-size: 18px;
-  font-weight: 900;
-  line-height: 1;
-}
-.lotte-device-size {
-  padding-left: 32px;
-  color: #555;
-  font-size: 12px;
-  font-weight: 600;
-  line-height: 1;
-}
-.lotte-device img {
-  width: 100%;
-  height: auto;
-  object-fit: contain;
-}
-.lotte-device--desktop img {
-  max-width: 520px;
-}
-.lotte-device--tablet img {
-  max-width: 220px;
-}
-.lotte-device--mobile img {
-  max-width: 140px;
 }

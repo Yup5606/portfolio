@@ -1,9 +1,11 @@
 /*어바웃 반응형 영역*/
-@media (max-width: 768px) {
-  .about-main,
-  .about-footer {
+
+/* 모바일 구간 */
+@media (max-width: 767px) {
+  .about-main {
     width: calc(100% - 36px);
   }
+
   .about-side-nav {
     position: static;
     display: flex;
@@ -13,6 +15,7 @@
     margin: 6.2em auto 0;
     transform: none;
   }
+
   .about-side-nav a {
     width: auto;
     height: auto;
@@ -20,24 +23,28 @@
     border-radius: 999px;
     font-size: 0.68em;
   }
+
   .about-side-nav a:hover,
   .about-side-nav a:focus-visible,
   .about-side-nav a.is-active {
     transform: none;
   }
+
   .about-hero {
-    display: grid;
     grid-template-columns: 1fr;
     gap: 28px;
+    align-items: start;
     min-height: auto;
     padding: 42px 0 66px;
   }
+
   .about-hero::before {
     top: 12%;
     right: -36vw;
     width: 320px;
     height: 320px;
   }
+
   .about-side-title {
     position: static;
     font-size: clamp(50px, 16vw, 82px);
@@ -45,45 +52,49 @@
     writing-mode: horizontal-tb;
     transform: none;
   }
+
   .about-photo-wrap {
     width: min(84vw, 360px);
+    margin: 0 auto;
     transform: rotate(-1deg);
   }
-  .about-photo-wrap:hover {
-    transform: rotate(0deg) translateY(-6px);
+
+  .about-photo-wrap:hover,
+  .skill-card:hover {
+    transform: none;
   }
+
   .about-hero > .about-intro,
   .about-hero > .keyword-card,
   .about-hero > .contact-strip {
     grid-column: auto;
   }
+
   .about-intro {
     padding-top: 0;
   }
-  .keyword-list {
-    display: grid;
-    grid-template-columns: 1fr;
-  }
-  .contact-strip {
-    display: grid;
-    grid-template-columns: 1fr;
-    width: 100%;
-  }
-  .about-section-head {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 12px;
-  }
+
+  .keyword-list,
+  .contact-strip,
+  .about-section-head,
   .skill-grid,
   .tool-category-grid,
-  .contact-section {
+  .license-panel,
+  .contact-card,
+  .contact-links {
     display: grid;
     grid-template-columns: 1fr;
   }
+
+  .about-section-head {
+    gap: 12px;
+  }
+
   .history-track {
     overflow: visible;
     padding: 0;
   }
+
   .history-list {
     display: grid;
     grid-template-columns: 1fr;
@@ -91,6 +102,7 @@
     min-height: auto;
     padding-left: 24px;
   }
+
   .history-list::before {
     top: 0;
     bottom: 0;
@@ -99,23 +111,26 @@
     height: auto;
     transform: none;
   }
+
   .history-item {
     display: grid;
     min-height: auto;
     padding-bottom: 28px;
   }
+
   .history-item::before {
     display: none;
   }
+
   .history-item::after {
     top: 28px;
-    bottom: auto;
     left: -16px;
     width: 12px;
     height: 12px;
     border-width: 3px;
     transform: none;
   }
+
   .history-date {
     position: static;
     display: block;
@@ -126,149 +141,97 @@
     text-align: left;
     transform: none;
   }
+
   .history-item-bottom .history-date {
     transform: none;
   }
+
   .history-copy {
     position: static;
     width: auto;
     padding: 20px;
     transform: none;
   }
+
   .history-item-top,
   .history-item-bottom {
     align-items: start;
   }
+
   .history-item:hover .history-copy,
   .history-item-bottom:hover .history-copy {
     transform: translateX(6px);
   }
-  .contact-card {
-    display: grid;
-    grid-template-columns: 1fr;
-  }
-  .license-panel,
-  .contact-links {
-    display: grid;
-    grid-template-columns: 1fr;
-  }
+
   .tool-category-card {
     display: grid;
     grid-template-columns: 1fr;
     gap: 24px;
-    min-height: auto;
     padding: 24px;
   }
-  .tool-category-head {
-    margin-bottom: 22px;
-  }
-  .about-footer {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 8px;
-    font-size: 9px;
-  }
-  .about-footer p {
-    min-width: 0;
-  }
-  .about-footer div {
-    display: flex;
-    flex-shrink: 0;
-    gap: 8px;
-  }
 }
-@media (min-width: 769px) and (max-width: 1280px) {
-  .about-main,
-  .about-footer {
+
+/* 태블릿 구간 */
+@media (min-width: 768px) and (max-width: 1279px) {
+  .about-main {
     width: calc(100% - 112px);
   }
+
   .about-side-nav {
     right: 0.8em;
   }
+
   .about-hero {
-    display: grid;
     grid-template-columns: 0.18fr 0.82fr 1fr;
+    align-items: center;
     gap: clamp(26px, 3vw, 48px);
+    min-height: calc(100vh - 200px);
+    padding: 100px 0 90px;
   }
-  .contact-strip {
+
+  .about-side-title {
+    align-self: center;
+  }
+
+  .about-photo-wrap {
+    align-self: flex-end;
+  }
+
+  .about-intro {
+    align-self: flex-end;
+    padding-top: 0;
+  }
+
+  .contact-strip,
+  .skill-grid,
+  .contact-links {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
-  .skill-grid {
-    display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
+
   .license-panel,
   .contact-card {
-    display: grid;
     grid-template-columns: 1fr;
   }
+
   .tool-category-card {
-    display: grid;
     grid-template-columns: 0.26fr 1fr;
     gap: 24px;
   }
-  .contact-links {
-    display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-  .contact-section {
-    display: block;
-  }
 }
-@media (min-width: 1281px) and (max-width: 1440px) {
-  .about-main,
-  .about-footer {
+
+/* PC 구간 */
+@media (min-width: 1280px) {
+  .about-main {
     width: calc(100% - 200px);
   }
-  .about-side-nav {
-    right: 0.8em;
-  }
-  .about-hero {
-    display: grid;
-    grid-template-columns: 0.18fr 0.82fr 1fr;
-    gap: clamp(26px, 3vw, 48px);
-  }
-  .contact-strip {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-  .skill-grid {
-    display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-  .license-panel,
-  .contact-card {
-    display: grid;
-    grid-template-columns: 1fr;
-  }
-  .tool-category-card {
-    display: grid;
-    grid-template-columns: 0.26fr 1fr;
-    gap: 24px;
-  }
-  .contact-links {
-    display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-  .contact-section {
-    display: block;
-  }
 }
+
 @media (prefers-reduced-motion: reduce) {
-  .about-page::after,
   .about-side-title,
   .about-photo-wrap,
   .skill-card,
   .keyword-list li::before,
-  .contact-card::after {
+  .contact-card {
     transition: none;
-  }
-}
-@media (max-width: 768px) {
-  .about-side-title,
-  .about-photo-wrap,
-  .skill-card,
-  .skill-card:hover {
-    transform: none;
   }
 }

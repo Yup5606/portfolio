@@ -20,29 +20,6 @@
     logo.className = "main-nav-logo";
   };
 
-  const applyFooterVariant = (target, fragment) => {
-    const footer = fragment.querySelector("footer");
-    const copy = fragment.querySelector("p");
-    const links = fragment.querySelector("div");
-    const githubLink = fragment.querySelector('a[href*="github.com"]');
-    const variant = target.dataset.footerVariant || "project";
-
-    if (!footer || !copy || !links) {
-      return;
-    }
-
-    footer.className =
-      variant === "index" ? "site-footer site-footer--index" : `site-footer site-footer--${variant} ${variant}-footer`;
-    links.className = variant === "panel" || variant === "loader" ? "panel-footer-links" : "";
-
-    if (variant === "panel") {
-      copy.textContent = "© 2026 PARK YOUBIN. All Rights Reserved.";
-      if (githubLink) {
-        githubLink.textContent = "Github";
-      }
-    }
-  };
-
   const loadInclude = async (target) => {
     const source = target.dataset.include;
 
@@ -62,10 +39,6 @@
 
     if (target.dataset.headerVariant) {
       applyHeaderVariant(target, fragment);
-    }
-
-    if (target.dataset.footerVariant) {
-      applyFooterVariant(target, fragment);
     }
 
     target.replaceWith(fragment);

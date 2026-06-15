@@ -30,44 +30,6 @@
   .index-image-row figure:last-child {
     display: none;
   }
-  .site-footer--index {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 8px;
-    font-size: 9px;
-  }
-  .site-footer--index p {
-    min-width: 0;
-  }
-  .site-footer--index div {
-    display: flex;
-    flex-shrink: 0;
-    gap: 8px;
-  }
-  .panel-footer,
-  .loader-footer {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 8px;
-    padding-right: 1.8em;
-    padding-left: 1.8em;
-    font-size: 0.56em;
-  }
-  .panel-footer p,
-  .loader-footer p {
-    min-width: 0;
-  }
-  .panel-footer-links {
-    display: flex;
-    flex-shrink: 0;
-    gap: 0.8em;
-  }
-  .loader-footer div {
-    flex-shrink: 0;
-    gap: 0.8em;
-  }
 }
 @media (min-width: 768px) {
   .index-hero {
@@ -111,17 +73,6 @@
   .main-panel-lotte .panel-title {
     font-size: 2.2em;
   }
-  .panel-footer,
-  .loader-footer {
-    right: 0;
-    bottom: 1.5em;
-    left: 0;
-    display: flex;
-    justify-content: space-between;
-    gap: 1.5em;
-    padding: 1em 1.8em 0;
-    font-size: 0.7em;
-  }
 }
 @media (min-width: 1280px) {
   .index-hero {
@@ -152,10 +103,6 @@
   .panel-scroll {
     right: 100px;
   }
-  .site-footer--index {
-    padding-right: 100px;
-    padding-left: 100px;
-  }
   .panel-count {
     font-size: 1em;
   }
@@ -164,13 +111,6 @@
   }
   .main-panel-lotte .panel-title {
     font-size: 2.9em;
-  }
-  .panel-footer,
-  .loader-footer {
-    right: 0;
-    left: 0;
-    padding-right: 100px;
-    padding-left: 100px;
   }
 }
 @media (min-width: 1440px) {

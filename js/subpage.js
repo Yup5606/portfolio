@@ -1,6 +1,6 @@
 (function () {
   const revealItems = document.querySelectorAll(
-    ".content-section, .image-story, .parley-role-section, .parley-research-section, .parley-persona-section, .parley-point-section, .parley-outcome-section, .lotte-persona-section, .lotte-design-section, .lotte-wireframe-section"
+    ".content-section, .image-story, .parley-role-section, .parley-research-section, .parley-persona-section, .parley-point-section"
   );
 
   if (!revealItems.length || !("IntersectionObserver" in window)) {
@@ -290,6 +290,19 @@
     shot.addEventListener("pointerleave", () => {
       shot.classList.remove("is-magnifier-visible");
     });
+  });
+})();
+
+(function () {
+  if (!window.AOS) {
+    return;
+  }
+
+  window.AOS.init({
+    duration: 720,
+    easing: "ease",
+    once: true,
+    offset: 80
   });
 })();
 

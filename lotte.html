@@ -7,8 +7,10 @@
     <title>Lotte GRS | Park Yubin Portfolio</title>
     <link rel="stylesheet" href="css/common.css" />
     <link rel="stylesheet" href="css/lotte.css" />
+    <link rel="stylesheet" href="css/lotte_detail.css" />
     <link rel="stylesheet" href="css/common_rwd.css" />
     <link rel="stylesheet" href="css/lotte_rwd.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
   </head>
   <body class="project-page lotte-project">
@@ -125,10 +127,10 @@
 
       <!--타깃 페르소나 영역-->
       <section class="lotte-persona-section" aria-labelledby="lotte-persona-title">
-        <p class="lotte-persona-kicker" id="lotte-persona-title"><strong>03.</strong><span>Target Paresona</span></p>
+        <p class="lotte-persona-kicker" id="lotte-persona-title" data-aos="fade-up"><strong>03.</strong><span>Target Paresona</span></p>
 
         <ul class="lotte-persona-list" aria-label="롯데 GRS 타깃 페르소나">
-          <li class="lotte-persona-card">
+          <li class="lotte-persona-card" data-aos="fade-up">
             <img src="image/lotte/persona-founder.jpg" alt="예비 창업주 윤서연" />
             <div class="lotte-persona-content">
               <header class="lotte-persona-header">
@@ -164,7 +166,7 @@
             </div>
           </li>
 
-          <li class="lotte-persona-card">
+          <li class="lotte-persona-card" data-aos="fade-up" data-aos-delay="100">
             <img src="image/lotte/persona-career.jpg" alt="외식 업계 취업 준비생 이지연" />
             <div class="lotte-persona-content">
               <header class="lotte-persona-header">
@@ -200,7 +202,7 @@
             </div>
           </li>
 
-          <li class="lotte-persona-card">
+          <li class="lotte-persona-card" data-aos="fade-up" data-aos-delay="200">
             <img src="image/lotte/persona-esg.jpg" alt="ESG 관심 사용자 박민수" />
             <div class="lotte-persona-content">
               <header class="lotte-persona-header">
@@ -238,7 +240,7 @@
         </ul>
 
         <div class="lotte-persona-needs">
-          <article>
+          <article data-aos="fade-up" data-aos-delay="300">
             <span class="lotte-persona-alert" aria-hidden="true">
               <img src="image/lotte/lotte_icon.svg" alt="" />
             </span>
@@ -251,7 +253,7 @@
               </ul>
             </div>
           </article>
-          <article>
+          <article data-aos="fade-up" data-aos-delay="400">
             <span class="lotte-persona-alert" aria-hidden="true">
               <img src="image/lotte/lotte_icon.svg" alt="" />
             </span>
@@ -269,9 +271,9 @@
 
       <!--디자인 시스템 영역-->
       <section class="lotte-design-section" aria-labelledby="lotte-design-title">
-        <p class="lotte-design-kicker" id="lotte-design-title"><strong>04.</strong><span>Design System</span></p>
+        <p class="lotte-design-kicker" id="lotte-design-title" data-aos="fade-up"><strong>04.</strong><span>Design System</span></p>
 
-        <div class="lotte-design-block lotte-design-color">
+        <div class="lotte-design-block lotte-design-color" data-aos="fade-up">
           <h2>Color</h2>
           <ul class="lotte-color-list" aria-label="롯데 GRS 컬러 시스템">
             <li>
@@ -292,7 +294,7 @@
           </ul>
         </div>
 
-        <div class="lotte-design-block lotte-design-typo">
+        <div class="lotte-design-block lotte-design-typo" data-aos="fade-up" data-aos-delay="100">
           <h2>Typography</h2>
           <div class="lotte-typo-layout">
             <div class="lotte-typo-copy">
@@ -320,7 +322,7 @@
           </div>
         </div>
 
-        <div class="lotte-design-block lotte-component-system">
+        <div class="lotte-design-block lotte-component-system" data-aos="fade-up" data-aos-delay="200">
           <h2>Component System</h2>
           <div class="lotte-component-layout">
             <div class="lotte-component-buttons">
@@ -354,17 +356,17 @@
       <!-- 와이어 프레임 영역 -->
       <section class="lotte-wireframe-section" aria-labelledby="lotte-wireframe-title">
         <div class="lotte-wireframe-inner">
-          <p class="lotte-section-kicker">
+          <p class="lotte-section-kicker" data-aos="fade-up">
             <strong>04.</strong>
             <span>Wire Frame</span>
           </p>
 
           <div class="lotte-wireframe-layout">
-            <figure class="lotte-wireframe-shot lotte-wireframe-shot--left">
+            <figure class="lotte-wireframe-shot lotte-wireframe-shot--left" data-aos="fade-up">
               <img src="image/lotte/wire_frame_1.jpg" alt="롯데 GRS 메인 페이지 와이어프레임" />
             </figure>
 
-            <figure class="lotte-wireframe-shot lotte-wireframe-shot--right">
+            <figure class="lotte-wireframe-shot lotte-wireframe-shot--right" data-aos="fade-up" data-aos-delay="100">
               <img src="image/lotte/wire_frame_2.jpg" alt="롯데 GRS 주요 섹션 와이어프레임" />
             </figure>
           </div>
@@ -388,6 +390,57 @@
           <figure class="lotte-sitemap-figure lotte-sitemap-figure--wide">
             <img src="image/lotte/lotte_tobe.svg" alt="개선된 롯데 GRS 사이트맵 구조" />
           </figure>
+        </div>
+      </section>
+
+      <!-- 프로젝트 목표 영역 -->
+      <section class="lotte-goal-section" aria-labelledby="lotte-goal-title">
+        <div class="lotte-goal-inner">
+          <div class="lotte-goal-head" data-aos="fade-up">
+            <p class="lotte-section-kicker">
+              <strong>06.</strong>
+              <span>PROJECT GOAL</span>
+            </p>
+
+            <p>
+              롯데 GRS의 브랜드 가치와 핵심 콘텐츠를 사용자 중심으로 재구성하여 보다 직관적이고 효과적인 디지털 경험을 제공하는 것을 목표로 하였습니다.
+            </p>
+          </div>
+
+          <div class="lotte-goal-diagram" aria-label="롯데 GRS 프로젝트 목표">
+            <div class="lotte-goal-visual" data-aos="fade-up" data-aos-delay="100">
+              <img class="lotte-goal-frame" src="image/lotte/diagram.svg" alt="" aria-hidden="true" />
+
+              <div class="lotte-goal-core">
+                <span class="lotte-goal-core-mark">
+                  <img src="image/lotte/lotte_goal_logo.svg" alt="" aria-hidden="true" />
+                </span>
+                <span class="lotte-goal-core-line"></span>
+                <p>브랜드의 경험을 연결하여<br />더 나은 가치를 만듭니다.</p>
+                <em>Connecting Value,<br />Creating Experience</em>
+              </div>
+            </div>
+
+            <article class="lotte-goal-card lotte-goal-card--brand" data-aos="fade-up">
+              <h2 id="lotte-goal-title">Brand Experience</h2>
+              <p>브랜드 스토리와 기업 철학을 시각적으로 강화하여 롯데 GRS만의 브랜드 경험을 효과적으로 전달합니다.</p>
+            </article>
+
+            <article class="lotte-goal-card lotte-goal-card--user" data-aos="fade-up" data-aos-delay="100">
+              <h2>User Experience</h2>
+              <p>정보 구조를 개선하고 콘텐츠 접근성을 높여 사용자가 원하는 정보를 빠르게 탐색할 수 있도록 합니다.</p>
+            </article>
+
+            <article class="lotte-goal-card lotte-goal-card--esg" data-aos="fade-up" data-aos-delay="200">
+              <h2>ESG Communication</h2>
+              <p>ESG 활동과 성과를 체계적으로 전달하여 기업의 신뢰도와 지속가능성을 강화합니다.</p>
+            </article>
+
+            <article class="lotte-goal-card lotte-goal-card--business" data-aos="fade-up" data-aos-delay="300">
+              <h2>Business Conversion</h2>
+              <p>창업·채용 등 주요 비즈니스 콘텐츠의 접근성을 높여 사용자 행동을 자연스럽게 유도합니다.</p>
+            </article>
+          </div>
         </div>
       </section>
 
@@ -447,9 +500,10 @@
 
     </main>
 
-    <div data-include="partials/footer.html" data-footer-variant="project"></div>
+    <div data-include="partials/footer.html"></div>
 
     <script src="js/common.js"></script>
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
     <script src="js/subpage.js"></script>
   </body>
 </html>

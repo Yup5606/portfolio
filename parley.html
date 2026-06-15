@@ -5,12 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" type="image/svg+xml" href="image/common/youbin.svg" />
     <title>Parley for the Ocean | Park Yubin Portfolio</title>
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css" />
     <link rel="stylesheet" href="css/common.css" />
     <link rel="stylesheet" href="css/parley.css" />
-    <link rel="stylesheet" href="css/parley_detail.css" />
     <link rel="stylesheet" href="css/common_rwd.css" />
     <link rel="stylesheet" href="css/parley_rwd.css" />
-    <link rel="stylesheet" href="css/parley_pc_rwd.css" />
   </head>
   <body class="project-page parley-project">
 
@@ -606,9 +605,9 @@
       </section>
 
       <!--최종 회고 영역-->
-      <section class="parley-outcome-section" aria-label="Parley 최종 결과 및 회고">
+      <section class="parley-outcome-section project-ending-section" aria-label="Parley 최종 결과 및 회고">
         <div class="parley-outcome-inner">
-          <article class="parley-outcome-card">
+          <article class="parley-outcome-card" data-aos="fade-up">
             <h3>Final Outcome</h3>
             <p>
               Parley의 ESG 메시지를 보다 직관적으로 전달할 수 있도록<br />
@@ -617,7 +616,7 @@
             <p>반응형 기반으로 다양한 디바이스 환경에서도 일관된 사용자 경험을 제공하고자 하였습니다.</p>
           </article>
 
-          <article class="parley-outcome-card">
+          <article class="parley-outcome-card" data-aos="fade-up" data-aos-delay="100">
             <h3>Reflection</h3>
             <p>
               프로젝트 진행 중 Safari 환경에서 일부 스크롤 애니메이션과 sticky 요소가 정상적으로 동작하지 않는 문제를<br />
@@ -629,19 +628,19 @@
             </p>
           </article>
 
-          <article class="parley-outcome-card">
+          <article class="parley-outcome-card" data-aos="fade-up" data-aos-delay="200">
             <h3>What I Learned</h3>
             <p>이번 프로젝트를 통해 브랜드 메시지와 사용자 경험을 함께 설계하는 과정의 중요성을 배울 수 있었습니다.</p>
             <p>GitHub 협업과 컴포넌트 구조화를 경험하며 유지보수를 고려한 퍼블리싱 방식에 대해 이해할 수 있었습니다.</p>
           </article>
 
-          <article class="parley-outcome-card">
+          <article class="parley-outcome-card" data-aos="fade-up" data-aos-delay="300">
             <h3>Areas for Improvement</h3>
             <p>정보량이 많은 ESG 콘텐츠 특성상 일부 섹션에서 전달력이 다소 복잡하게 느껴질 수 있었습니다.</p>
             <p>사용자 테스트와 콘텐츠 우선순위 정리가 더 보완되었다면 몰입도를 더욱 높일 수 있었을 것이라 생각합니다.</p>
           </article>
 
-          <article class="parley-outcome-card">
+          <article class="parley-outcome-card" data-aos="fade-up" data-aos-delay="400">
             <h3>Future Direction</h3>
             <p>
               앞으로는 사용자 테스트 기반 UX 개선과 인터랙션 구현 역량을 더욱 강화하여<br />
@@ -650,11 +649,12 @@
           </article>
         </div>
 
-        <div data-include="partials/footer.html" data-footer-variant="project"></div>
+        <div data-include="partials/footer.html"></div>
       </section>
     </main>
 
     <script src="js/common.js"></script>
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
     <script src="js/subpage.js"></script>
   </body>
 </html>

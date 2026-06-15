@@ -22,10 +22,12 @@
   --gray-font: #a5a5a5;
   --line: rgba(17, 24, 39, 0.14);
   --white: #ffffff;
+  --footer-color: var(--ink);
+  --footer-line: rgba(17, 24, 39, 0.16);
   --radius-pill: 999px;
   --motion-rise: opacity 0.7s ease, transform 0.7s ease;
   --font-sans: "Pretendard Variable", "Pretendard", "Apple SD Gothic Neo", "Noto Sans KR", Arial, sans-serif;
-  --font-serif: "Pretendard Variable", "Pretendard", "Apple SD Gothic Neo", "Noto Sans KR", Arial, sans-serif;
+  --font-serif: "열린명조", "Yeolrin Myeongjo", "YoonOpenMyeongjo", "Nanum Myeongjo", "Noto Serif KR", serif;
   --font-wild: "Wild Youth", "Pretendard Variable", "Pretendard", "Apple SD Gothic Neo", "Noto Sans KR", Arial, sans-serif;
   --font-hand: "KyoboHandwriting2020ParkDoYeon", "Pretendard Variable", "Pretendard", "Apple SD Gothic Neo", "Noto Sans KR", Arial, sans-serif;
   --project-body-font-size: 12px;
@@ -113,7 +115,7 @@ select {
 .site-nav__logo img,
 .main-nav-logo img {
   padding: 6px;
-  width: 70%;
+  width: 100%;
 }
 .site-nav nav,
 .main-nav nav {
@@ -408,6 +410,45 @@ select {
   filter: drop-shadow(0 18px 24px rgba(16, 24, 40, 0.12));
 }
 
+/*공통 푸터 영역*/
+.site-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5em;
+  width: 100%;
+  padding: 1em 1.8em;
+  border-top: 0.1em solid var(--footer-line);
+  color: var(--footer-color);
+  font-size: 0.56em;
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: 0;
+  background: transparent;
+}
+.site-footer p {
+  min-width: 0;
+  margin: 0;
+}
+.site-footer div {
+  display: flex;
+  flex-shrink: 0;
+  gap: 0.8em;
+}
+.site-footer a {
+  color: inherit;
+}
+.project-ending-section {
+  position: relative;
+}
+.project-ending-section > .site-footer {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 3;
+}
+
 /*모바일 기본 영역*/
 .site-nav nav,
 .main-nav nav {
@@ -432,23 +473,6 @@ select {
 .phone-row {
   grid-template-columns: 1fr;
 }
-.project-footer {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 8px;
-  padding: 24px 18px;
-  font-size: 9px;
-}
-.project-footer p {
-  min-width: 0;
-}
-.project-footer div {
-  display: flex;
-  flex-shrink: 0;
-  gap: 8px;
-}
-
 /*모션 영역*/
 .reveal {
   opacity: 0;

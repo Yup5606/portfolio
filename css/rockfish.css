@@ -2,7 +2,8 @@
 .rockfish-project {
   --rockfish-blue: #142a74;
   --rockfish-hover: #0e225f;
-  --rockfish-bg: #f9f9f9;
+  --rockfish-bg: #edf4f7;
+  background: var(--rockfish-bg);
 }
 .rockfish-hero {
   --showcase-color: var(--rockfish-blue);
@@ -22,6 +23,10 @@
 }
 .rockfish-hero .project-showcase-actions a {
   max-width: 166px;
+}
+.rockfish-project .content-section,
+.rockfish-project .content-section:nth-of-type(odd) {
+  background: var(--rockfish-bg);
 }
 
 /*락피쉬 스토리 영역*/

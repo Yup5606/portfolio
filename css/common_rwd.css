@@ -22,6 +22,9 @@
     max-width: none;
     font-size: 0.78em;
   }
+  .site-footer {
+    font-size: 0.7em;
+  }
 }
 @media (min-width: 1280px) {
   .site-nav,
@@ -54,14 +57,6 @@
   }
   .phone-row {
     grid-template-columns: repeat(4, minmax(180px, 1fr));
-  }
-  .project-footer {
-    gap: 28px;
-    padding: 28px 100px;
-    font-size: 14px;
-  }
-  .project-footer div {
-    gap: 28px;
   }
   .project-showcase-hero {
     min-height: max(100vh, 860px);

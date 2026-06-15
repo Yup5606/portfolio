@@ -1,0 +1,205 @@
+/* 롯데 프로젝트 목표 영역 */
+.lotte-goal-section {
+  display: grid;
+  padding: 76px 18px 92px;
+  color: var(--lotte-ink);
+  background: var(--lotte-bg);
+}
+.lotte-goal-inner {
+  display: grid;
+  gap: 54px;
+}
+.lotte-goal-head {
+  display: grid;
+  gap: 34px;
+}
+.lotte-goal-head > p:last-child {
+  margin: 0;
+  color: var(--lotte-ink);
+  font-size: var(--project-body-font-size);
+  font-weight: 500;
+  line-height: 1.7;
+  word-break: keep-all;
+}
+.lotte-goal-diagram {
+  position: relative;
+  display: grid;
+  gap: 30px;
+}
+.lotte-goal-visual {
+  position: relative;
+  display: grid;
+  place-items: center;
+  justify-self: center;
+  order: -1;
+  width: 250px;
+  height: 250px;
+  border: 1px solid rgba(5, 5, 5, 0.12);
+  border-radius: 50%;
+  aspect-ratio: 1;
+  background: rgba(237, 28, 36, 0.055);
+}
+.lotte-goal-visual::before {
+  position: absolute;
+  inset: -14px;
+  border: 1px solid rgba(237, 28, 36, 0.26);
+  border-radius: 50%;
+  content: "";
+  pointer-events: none;
+}
+.lotte-goal-frame {
+  display: none;
+  grid-area: 1 / 1;
+  width: 100%;
+  height: auto;
+  pointer-events: none;
+}
+.lotte-goal-card {
+  display: grid;
+  gap: 12px;
+  padding: 24px 20px;
+  border: 1px solid rgba(237, 28, 36, 0.14);
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.58);
+}
+.lotte-goal-card h2 {
+  margin: 0;
+  color: var(--lotte-ink);
+  font-size: calc(var(--project-title-font-size) * 0.95);
+  font-weight: 800;
+  line-height: 1.12;
+  letter-spacing: 0;
+}
+.lotte-goal-card p {
+  margin: 0;
+  color: var(--lotte-ink);
+  font-size: var(--project-body-font-size);
+  font-weight: 500;
+  line-height: 1.55;
+  word-break: keep-all;
+}
+.lotte-goal-core {
+  position: relative;
+  display: grid;
+  justify-items: center;
+  grid-area: 1 / 1;
+  gap: 12px;
+  width: 72%;
+  padding: 0;
+  color: var(--lotte-ink);
+  text-align: center;
+  background: transparent;
+}
+.lotte-goal-core-mark {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 92px;
+  height: auto;
+}
+.lotte-goal-core-mark img {
+  width: 100%;
+}
+.lotte-goal-core-line {
+  width: 60px;
+  height: 1px;
+  background: var(--lotte-red);
+}
+.lotte-goal-core p {
+  margin: 0;
+  color: var(--lotte-ink);
+  font-size: calc(var(--project-body-font-size) * 0.96);
+  font-weight: 800;
+  line-height: 1.35;
+}
+.lotte-goal-core em {
+  color: var(--lotte-ink);
+  font-size: calc(var(--project-body-font-size) * 0.9);
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.28;
+}
+
+/* 롯데 퍼블리싱 개발 영역 */
+.lotte-publishing-section {
+  display: grid;
+  gap: 44px;
+  padding: 76px 18px 92px;
+  color: var(--lotte-ink);
+  background: var(--lotte-bg);
+}
+.lotte-publishing-copy {
+  display: grid;
+  gap: 24px;
+}
+.lotte-publishing-copy h2 {
+  margin: 0;
+  color: var(--lotte-ink);
+  font-size: var(--project-title-font-size);
+  font-weight: 800;
+  line-height: 1.3;
+  letter-spacing: 0;
+}
+.lotte-publishing-copy > p:last-child {
+  margin: 0;
+  color: var(--lotte-ink);
+  font-size: var(--project-body-font-size);
+  font-weight: 500;
+  line-height: 1.7;
+  word-break: keep-all;
+}
+.lotte-device-layout {
+  display: grid;
+  align-items: end;
+  gap: 28px;
+}
+.lotte-device {
+  display: grid;
+  gap: 10px;
+  margin: 0;
+}
+.lotte-device-caption {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  color: var(--lotte-ink);
+  line-height: 1;
+}
+.lotte-device-title {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  color: var(--lotte-ink);
+}
+.lotte-device-icon {
+  color: var(--lotte-red);
+  font-size: 20px;
+  line-height: 1;
+}
+.lotte-device-title strong {
+  color: var(--lotte-ink);
+  font-size: 18px;
+  font-weight: 900;
+  line-height: 1;
+}
+.lotte-device-size {
+  padding-left: 32px;
+  color: #555;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 1;
+}
+.lotte-device img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+.lotte-device--desktop img {
+  max-width: 520px;
+}
+.lotte-device--tablet img {
+  max-width: 220px;
+}
+.lotte-device--mobile img {
+  max-width: 140px;
+}

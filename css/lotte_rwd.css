@@ -191,6 +191,50 @@
     margin-bottom: 64px;
   }
 
+  /* 프로젝트 목표 영역 */
+  .lotte-goal-section {
+    padding: 96px 56px 116px;
+  }
+  .lotte-goal-inner {
+    gap: 70px;
+  }
+  .lotte-goal-head {
+    gap: 42px;
+  }
+  .lotte-goal-head > p:last-child {
+    font-size: 16px;
+  }
+  .lotte-goal-diagram {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    align-items: stretch;
+    gap: 22px;
+  }
+  .lotte-goal-visual {
+    grid-column: 1 / -1;
+    width: 320px;
+    height: 320px;
+  }
+  .lotte-goal-card {
+    min-height: 174px;
+    padding: 28px 24px;
+  }
+  .lotte-goal-card h2 {
+    font-size: 24px;
+  }
+  .lotte-goal-card p {
+    font-size: 14px;
+  }
+  .lotte-goal-core {
+    width: 70%;
+  }
+  .lotte-goal-core-mark {
+    width: 116px;
+    height: auto;
+  }
+  .lotte-goal-core-mark img {
+    width: 100%;
+  }
+
   /* 퍼블리싱 영역 */
   .lotte-publishing-section {
     grid-template-columns: minmax(220px, 0.55fr) minmax(460px, 1.45fr);
@@ -507,6 +551,99 @@
   }
   .lotte-sitemap-figure img {
     width: min(100%, 620px);
+  }
+
+  /* 프로젝트 목표 영역 */
+  .lotte-goal-section {
+    padding: clamp(96px, 7vw, 138px) 100px;
+  }
+  .lotte-goal-inner {
+    gap: clamp(70px, 5vw, 96px);
+  }
+  .lotte-goal-head {
+    gap: clamp(38px, 3vw, 56px);
+  }
+  .lotte-goal-head > p:last-child {
+    max-width: none;
+    font-size: clamp(16px, 1vw, 19px);
+  }
+  .lotte-goal-diagram {
+    display: grid;
+    grid-template-columns: minmax(270px, 0.72fr) minmax(520px, 0.95fr) minmax(270px, 0.72fr);
+    grid-template-rows: 1fr 1fr;
+    align-items: center;
+    gap: clamp(18px, 2.4vw, 52px);
+    min-height: clamp(500px, 37vw, 650px);
+  }
+  .lotte-goal-visual {
+    grid-column: 2;
+    grid-row: 1 / span 2;
+    order: 0;
+    width: min(100%, 677px);
+    border: 0;
+    border-radius: 0;
+    aspect-ratio: auto;
+    background: transparent;
+  }
+  .lotte-goal-visual::before {
+    display: none;
+  }
+  .lotte-goal-frame {
+    display: block;
+  }
+  .lotte-goal-card {
+    position: relative;
+    min-height: auto;
+    padding: 0;
+    border: 0;
+    border-radius: 0;
+    background: transparent;
+  }
+  .lotte-goal-card h2 {
+    font-size: clamp(30px, 2vw, 40px);
+  }
+  .lotte-goal-card p {
+    max-width: 370px;
+    margin-top: 4px;
+    font-size: clamp(14px, 0.9vw, 17px);
+  }
+  .lotte-goal-card--brand,
+  .lotte-goal-card--esg {
+    grid-column: 1;
+    text-align: left;
+  }
+  .lotte-goal-card--user,
+  .lotte-goal-card--business {
+    grid-column: 3;
+    text-align: left;
+  }
+  .lotte-goal-card--brand,
+  .lotte-goal-card--user {
+    grid-row: 1;
+    align-self: start;
+    margin-top: clamp(40px, 5vw, 92px);
+  }
+  .lotte-goal-card--esg,
+  .lotte-goal-card--business {
+    grid-row: 2;
+    align-self: end;
+    margin-bottom: clamp(40px, 5vw, 92px);
+  }
+  .lotte-goal-core {
+    width: 45%;
+  }
+  .lotte-goal-core-mark {
+    width: 128px;
+    height: auto;
+  }
+  .lotte-goal-core-mark img {
+    width: 100%;
+  }
+  .lotte-goal-core p {
+    font-size: clamp(14px, 0.95vw, 17px);
+  }
+  .lotte-goal-core em {
+    font-size: clamp(14px, 0.9vw, 16px);
   }
 
   /* 퍼블리싱 영역 */
