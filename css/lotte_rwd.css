@@ -1,4 +1,14 @@
 /*반응형 영역*/
+@media (max-width: 768px) {
+  /* 프로젝트 목표 영역 */
+  .lotte-goal-diagram {
+    gap: 18px;
+  }
+  .lotte-goal-visual {
+    margin-bottom: 18px;
+  }
+}
+
 @media (min-width: 769px) and (max-width: 1279px) {
   .lotte-hero .project-showcase-mockup {
     width: min(54%, 520px);
@@ -231,9 +241,6 @@
     width: 116px;
     height: auto;
   }
-  .lotte-goal-core-mark img {
-    width: 100%;
-  }
 
   /* 퍼블리싱 영역 */
   .lotte-publishing-section {
@@ -252,6 +259,107 @@
   }
   .lotte-device--mobile img {
     max-width: 50%;
+  }
+
+  /* 툴 영역 */
+  .lotte-tool-section {
+    gap: 34px;
+    padding: 96px 56px 116px;
+  }
+  .lotte-tool-group {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 18px;
+  }
+  .lotte-tool-card {
+    gap: 20px;
+    min-height: 174px;
+    padding: 28px 24px;
+    border-radius: 20px;
+  }
+  .lotte-tool-list {
+    gap: 12px;
+  }
+  .lotte-tool-list img {
+    width: 38px;
+    height: 38px;
+  }
+
+  /* 키 피처 영역 */
+  .lotte-feature-section {
+    gap: 42px;
+    padding: 96px 56px 116px;
+  }
+  .lotte-feature-head {
+    gap: 22px;
+  }
+  .lotte-feature-list {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 22px;
+    max-width: 860px;
+    margin: 0 auto;
+  }
+  .lotte-feature-card {
+    gap: 20px;
+    min-height: 420px;
+    padding: 28px 24px 30px;
+    border-radius: 20px;
+  }
+  .lotte-feature-card figure {
+    max-width: 340px;
+  }
+  .lotte-feature-card p {
+    max-width: 340px;
+  }
+
+  /* As is To be 영역 */
+  .lotte-compare-section {
+    gap: 54px;
+    padding: 96px 56px 116px;
+  }
+  .lotte-compare-media {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 28px;
+  }
+  .lotte-compare-item video {
+    max-width: 100%;
+  }
+  .lotte-compare-point-list {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 28px;
+  }
+  .lotte-compare-point-list li {
+    grid-template-columns: 82px minmax(0, 1fr);
+    gap: 20px;
+  }
+  .lotte-compare-point-list > li > span {
+    width: 82px;
+    height: 82px;
+    font-size: 44px;
+  }
+
+  /* 최종 회고 영역 */
+  .lotte-outcome-section {
+    padding: 196px 44px 110px;
+  }
+  .lotte-outcome-section::before {
+    height: 144px;
+  }
+  .lotte-outcome-inner {
+    gap: 20px;
+  }
+  .lotte-outcome-card {
+    gap: 12px;
+    padding: 26px 30px;
+    border-radius: 12px;
+  }
+  .lotte-outcome-card h3 {
+    font-size: calc(var(--project-title-font-size) * 0.76);
+  }
+  .lotte-outcome-card p {
+    font-size: calc(var(--project-body-font-size) * 0.9);
+  }
+  .lotte-outcome-card br {
+    display: inline;
   }
 }
 @media (min-width: 1280px) {
@@ -636,9 +744,6 @@
     width: 128px;
     height: auto;
   }
-  .lotte-goal-core-mark img {
-    width: 100%;
-  }
   .lotte-goal-core p {
     font-size: clamp(14px, 0.95vw, 17px);
   }
@@ -669,6 +774,144 @@
   }
   .lotte-device--mobile img {
     max-width: 90px;
+  }
+
+  /* 툴 영역 */
+  .lotte-tool-section {
+    gap: 40px;
+    padding: clamp(96px, 7vw, 138px) 100px;
+  }
+  .lotte-tool-group {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: clamp(18px, 1.5vw, 28px);
+    max-width: 1240px;
+  }
+  .lotte-tool-card {
+    gap: 24px;
+    min-height: clamp(210px, 15vw, 270px);
+    padding: clamp(28px, 2.4vw, 42px);
+    border-radius: 24px;
+  }
+  .lotte-tool-card h2 {
+    font-size: clamp(18px, 1.25vw, 24px);
+  }
+  .lotte-tool-list {
+    gap: clamp(12px, 1vw, 16px);
+  }
+  .lotte-tool-list img {
+    width: clamp(36px, 2.5vw, 48px);
+    height: clamp(36px, 2.5vw, 48px);
+  }
+
+  /* 키 피처 영역 */
+  .lotte-feature-section {
+    gap: clamp(46px, 4vw, 68px);
+    padding: clamp(96px, 7vw, 138px) 100px;
+  }
+  .lotte-feature-head {
+    gap: 24px;
+  }
+  .lotte-feature-head > p:last-child {
+    max-width: 760px;
+    font-size: 18px;
+  }
+  .lotte-feature-list {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: clamp(18px, 1.7vw, 30px);
+    max-width: 1440px;
+    margin: 0 auto;
+  }
+  .lotte-feature-card {
+    gap: clamp(18px, 1.35vw, 26px);
+    padding: clamp(24px, 1.8vw, 36px);
+    border-radius: 24px;
+  }
+  .lotte-feature-card figure {
+    max-width: 340px;
+  }
+  .lotte-feature-card p {
+    max-width: 340px;
+  }
+  .lotte-feature-card > strong,
+  .lotte-feature-card h2 {
+    font-size: clamp(18px, 1.15vw, 22px);
+  }
+  .lotte-feature-card p {
+    font-size: clamp(15px, 1vw, 18px);
+  }
+
+  /* As is To be 영역 */
+  .lotte-compare-section {
+    grid-template-columns: minmax(320px, 0.58fr) minmax(780px, 1.42fr);
+    align-items: start;
+    gap: clamp(54px, 4.2vw, 82px);
+    padding: clamp(96px, 7vw, 138px) 100px;
+  }
+  .lotte-compare-copy {
+    gap: 24px;
+    padding-top: 0;
+  }
+  .lotte-compare-copy h2 {
+    font-size: clamp(30px, 2.2vw, 44px);
+  }
+  .lotte-compare-copy > p:last-child {
+    font-size: 18px;
+  }
+  .lotte-compare-media {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: clamp(26px, 2.2vw, 42px);
+  }
+  .lotte-compare-item video {
+    max-width: 100%;
+  }
+  .lotte-compare-point-list {
+    grid-column: 1 / -1;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: clamp(42px, 5vw, 92px);
+    padding-top: clamp(22px, 3vw, 48px);
+  }
+  .lotte-compare-point-list li {
+    grid-template-columns: clamp(86px, 6.2vw, 118px) minmax(0, 1fr);
+    gap: clamp(20px, 2vw, 32px);
+  }
+  .lotte-compare-point-list > li > span {
+    width: clamp(86px, 6.2vw, 118px);
+    height: clamp(86px, 6.2vw, 118px);
+    font-size: clamp(46px, 3.2vw, 62px);
+  }
+  .lotte-compare-point-list h3 {
+    font-size: clamp(24px, 1.7vw, 34px);
+  }
+  .lotte-compare-point-list p {
+    font-size: clamp(15px, 1vw, 18px);
+  }
+
+  /* 최종 회고 영역 */
+  .lotte-outcome-section {
+    padding: clamp(246px, 15vw, 340px) 100px clamp(112px, 7vw, 148px);
+  }
+  .lotte-outcome-section::before {
+    height: clamp(188px, 14vw, 292px);
+  }
+  .lotte-outcome-inner {
+    top: 50px;
+    gap: clamp(26px, 2.2vw, 40px);
+    width: 100%;
+  }
+  .lotte-outcome-card {
+    gap: 16px;
+    padding: clamp(30px, 2.2vw, 42px) clamp(46px, 4.5vw, 86px);
+    border-radius: 14px;
+  }
+  .lotte-outcome-card h3 {
+    font-size: calc(var(--project-title-font-size) * 0.78);
+  }
+  .lotte-outcome-card p {
+    font-size: var(--project-body-font-size);
+    line-height: 1.58;
+  }
+  .lotte-outcome-card br {
+    display: inline;
   }
 }
 @media (min-width: 1281px) and (max-width: 1440px) {
