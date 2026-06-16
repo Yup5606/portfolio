@@ -631,16 +631,16 @@
 }
 .license-panel {
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 14px;
 }
 .license-card {
   position: relative;
   display: grid;
   align-content: space-between;
-  min-height: 320px;
-  padding: 30px;
-  border-radius: 28px;
+  min-height: 260px;
+  padding: 26px;
+  border-radius: 24px;
   overflow: hidden;
   transition:
     transform 0.28s ease,
@@ -650,8 +650,8 @@
   position: absolute;
   right: -54px;
   bottom: -54px;
-  width: 178px;
-  height: 178px;
+  width: 150px;
+  height: 150px;
   border: 1px solid rgba(63, 95, 85, 0.18);
   border-radius: 50%;
   content: "";
@@ -680,7 +680,7 @@
   z-index: 2;
   display: block;
   color: rgba(63, 95, 85, 0.22);
-  font-size: 54px;
+  font-size: 44px;
   font-weight: 950;
   line-height: 0.9;
 }
@@ -695,22 +695,22 @@
   display: block;
   margin-bottom: 10px;
   color: var(--about-ink);
-  font-size: clamp(26px, 2.1vw, 38px);
+  font-size: clamp(22px, 1.6vw, 30px);
   font-weight: 700;
   line-height: 1.15;
   letter-spacing: -0.035em;
 }
 .license-box span {
   display: block;
-  margin-bottom: 22px;
+  margin-bottom: 16px;
   color: var(--about-accent);
-  font-size: 14px;
+  font-size: 13px;
   font-weight: 700;
 }
 .license-box p {
   margin: 0;
   color: var(--about-muted);
-  font-size: 14px;
+  font-size: 13px;
   line-height: 1.7;
   word-break: keep-all;
 }
