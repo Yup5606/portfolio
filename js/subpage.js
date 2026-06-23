@@ -294,6 +294,183 @@
 })();
 
 (function () {
+  const flowCards = document.querySelectorAll(".rockfish-flow-card");
+  const painList = document.querySelector(".rockfish-pain-list");
+  const painCard = document.querySelector(".rockfish-pain-card");
+
+  if (!flowCards.length || !painList || !painCard) {
+    return;
+  }
+
+  const painData = [
+    {
+      label: "Pain Point 01",
+      title: "브랜드의 헤리티지 전달 부족",
+      text: "영국 해안 감성과 브랜드 배경이 충분히 전달되지 않아, 사용자가 브랜드를 단순히 트렌디한 패션 브랜드로 인식할 가능성이 있었습니다."
+    },
+    {
+      label: "Pain Point 02",
+      title: "상품 중심 구조로 인한 브랜드 경험 약화",
+      text: "제품 정보는 다양하게 제공되지만 브랜드 스토리와 무드가 함께 연결되지 않아, 사용자가 브랜드 정체성을 깊게 경험하기 어려웠습니다."
+    },
+    {
+      label: "Pain Point 03",
+      title: "브랜드 정체성 각인 부족",
+      text: "사이트를 탐색한 뒤에도 브랜드는 기억되지만, 왜 특별한 브랜드인지와 어떤 감성적 가치를 제공하는지는 명확하게 남지 않았습니다."
+    }
+  ];
+
+  const setFlowActive = (index) => {
+    flowCards.forEach((card, cardIndex) => {
+      const button = card.querySelector("button");
+      const isActive = cardIndex === index;
+
+      card.classList.toggle("is-active", isActive);
+      button?.setAttribute("aria-pressed", String(isActive));
+    });
+
+    painList.classList.add("is-changing");
+
+    window.setTimeout(() => {
+      painCard.querySelector("span").textContent = painData[index].label;
+      painCard.querySelector("h3").textContent = painData[index].title;
+      painCard.querySelector("p").textContent = painData[index].text;
+      painList.classList.remove("is-changing");
+    }, 180);
+  };
+
+  flowCards.forEach((card) => {
+    const button = card.querySelector("button");
+
+    button?.addEventListener("click", () => {
+      setFlowActive(Number(card.dataset.flowIndex));
+    });
+  });
+
+  setFlowActive(0);
+})();
+
+(function () {
+  const posterSection = document.querySelector(".rockfish-poster-section");
+
+  if (!posterSection) {
+    return;
+  }
+
+  const modal = posterSection.querySelector(".rockfish-poster-modal");
+  const modalImage = modal?.querySelector(".rockfish-poster-modal-inner img");
+  const closeButton = modal?.querySelector(".rockfish-poster-modal-close");
+  const posterButtons = posterSection.querySelectorAll(".rockfish-poster-button");
+
+  if (!modal || !modalImage || !closeButton || !posterButtons.length) {
+    return;
+  }
+
+  const closePosterModal = () => {
+    modal.classList.remove("is-open");
+    modal.setAttribute("aria-hidden", "true");
+  };
+
+  const openPosterModal = (button) => {
+    modalImage.src = button.dataset.posterSrc;
+    modalImage.alt = button.dataset.posterAlt || "";
+    modal.classList.add("is-open");
+    modal.setAttribute("aria-hidden", "false");
+    closeButton.focus();
+  };
+
+  posterButtons.forEach((button) => {
+    button.addEventListener("click", () => openPosterModal(button));
+  });
+
+  closeButton.addEventListener("click", closePosterModal);
+  modal.addEventListener("click", (event) => {
+    if (event.target === modal) {
+      closePosterModal();
+    }
+  });
+
+  window.addEventListener("keydown", (event) => {
+    if (event.key === "Escape" && modal.classList.contains("is-open")) {
+      closePosterModal();
+    }
+  });
+})();
+
+(function () {
+  const phones = document.querySelectorAll("[data-drag-scroll]");
+
+  if (!phones.length) {
+    return;
+  }
+
+  phones.forEach((phone) => {
+    const screen = phone.querySelector(".rockfish-brand-phone-screen");
+
+    if (!screen) {
+      return;
+    }
+
+    let isDragging = false;
+    let startY = 0;
+    let startScrollTop = 0;
+
+    const getClientY = (event) => {
+      if (event.touches?.length) {
+        return event.touches[0].clientY;
+      }
+
+      if (event.changedTouches?.length) {
+        return event.changedTouches[0].clientY;
+      }
+
+      return event.clientY;
+    };
+
+    const startDragging = (event) => {
+      isDragging = true;
+      startY = getClientY(event);
+      startScrollTop = screen.scrollTop;
+      screen.classList.add("is-dragging");
+    };
+
+    const moveDragging = (event) => {
+      if (!isDragging) {
+        return;
+      }
+
+      event.preventDefault();
+      screen.scrollTop = startScrollTop - (getClientY(event) - startY);
+    };
+
+    const stopDragging = () => {
+      if (!isDragging) {
+        return;
+      }
+
+      isDragging = false;
+      screen.classList.remove("is-dragging");
+    };
+
+    screen.addEventListener("pointerdown", (event) => {
+      startDragging(event);
+      screen.setPointerCapture?.(event.pointerId);
+    });
+    screen.addEventListener("pointermove", moveDragging);
+    screen.addEventListener("pointerup", stopDragging);
+    screen.addEventListener("pointercancel", stopDragging);
+    screen.addEventListener("pointerleave", stopDragging);
+    screen.addEventListener("mousedown", startDragging);
+    window.addEventListener("mousemove", moveDragging);
+    window.addEventListener("mouseup", stopDragging);
+    screen.addEventListener("touchstart", startDragging, { passive: false });
+    screen.addEventListener("touchmove", moveDragging, { passive: false });
+    screen.addEventListener("touchend", stopDragging);
+    screen.addEventListener("touchcancel", stopDragging);
+  });
+})();
+
+(function () {
   if (!window.AOS) {
     return;
   }

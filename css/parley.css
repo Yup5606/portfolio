@@ -1,13 +1,33 @@
+/* 공통값 */
+h2 {
+  margin: 0 0 30px;
+  font-size: var(--project-title-font-size);
+  color: var(--parley-navy);
+  font-weight: 700;
+  line-height: 1.35;
+  letter-spacing: 0;
+  text-align: center;
+}
+
+h3 {
+  margin: 0;
+  color: var(--parley-ink);
+  letter-spacing: 0;
+  font-weight: 700;
+  line-height: 1.35;
+  font-size: calc(var(--project-body-font-size) * 1.3);
+}
+
 /*팔리 히어로 영역*/
 .parley-project {
   --parley-navy: #0c1552;
-  --parley-mint: #9fe1e4;
+  --parley-mint: #7acfd4;
   --parley-mint-hover: #74c9ce;
   --parley-bg: #f9f9f9;
   --parley-ink: #222;
   --parley-light-gray: #f1f2f3;
   --parley-light-gray-rgb: 241, 242, 243;
-  --parley-light-text: #eef5f6;
+  --parley-light-text: #fff;
   background: var(--parley-bg);
 }
 .parley-hero {
@@ -54,10 +74,6 @@
 .parley-report-content h2 {
   margin: 0 0 34px;
   color: rgba(255, 255, 255, 0.96);
-  font-size: var(--project-body-font-size);
-  font-weight: 800;
-  line-height: 1.35;
-  letter-spacing: 0;
 }
 .parley-report-copy {
   display: grid;
@@ -67,7 +83,6 @@
   margin: 0;
   color: rgba(255, 255, 255, 0.92);
   font-size: var(--project-body-font-size);
-  font-weight: 400;
   line-height: 1.78;
   letter-spacing: 0;
 }
@@ -104,22 +119,8 @@
   gap: 20px;
   color: var(--parley-ink);
 }
-.parley-role-card h2,
-.parley-role-card h3 {
+.parley-role-card h2 {
   margin: 0;
-  color: var(--parley-ink);
-  font-size: var(--project-person-name-font-size);
-  font-weight: 600;
-  line-height: 1.2;
-  letter-spacing: 0;
-}
-.parley-skill-panel h2 {
-  margin: 0;
-  color: var(--parley-ink);
-  font-size: var(--project-title-font-size);
-  font-weight: 600;
-  line-height: 1.2;
-  letter-spacing: 0;
 }
 .parley-profile {
   width: 120px;
@@ -256,15 +257,6 @@
   width: 100%;
   margin: 0 auto;
 }
-.parley-research-inner h2 {
-  margin: 0 0 42px;
-  color: var(--parley-ink);
-  font-size: var(--project-title-font-size);
-  font-weight: 700;
-  line-height: 1.2;
-  text-align: center;
-  letter-spacing: 0;
-}
 .parley-chart-grid {
   display: grid;
   gap: 46px;
@@ -272,15 +264,6 @@
 .parley-research-card {
   display: grid;
   gap: 24px;
-}
-.parley-research-card h3 {
-  margin: 0;
-  color: var(--parley-ink);
-  font-size: calc(var(--project-body-font-size) * 1.25);
-  font-weight: 700;
-  line-height: 1.35;
-  text-align: center;
-  letter-spacing: 0;
 }
 .parley-pie-chart {
   position: relative;
@@ -383,15 +366,6 @@
   width: 100%;
   margin: 0 auto;
 }
-.parley-persona-inner > h2 {
-  margin: 0 0 42px;
-  color: var(--parley-navy);
-  font-size: 44px;
-  font-weight: 500;
-  line-height: 1;
-  text-align: center;
-  letter-spacing: 0;
-}
 .parley-persona-layout {
   display: grid;
   gap: 34px;
@@ -446,14 +420,6 @@
 .parley-persona-quote p {
   margin: 0;
 }
-.parley-persona-info h3 {
-  margin: 0;
-  color: var(--parley-ink);
-  font-size: calc(var(--project-title-font-size) * 0.82);
-  font-weight: 800;
-  line-height: 1.25;
-  letter-spacing: 0;
-}
 .parley-persona-info h3 span {
   font-size: calc(var(--project-body-font-size) * 1.08);
   font-weight: 700;
@@ -497,16 +463,6 @@
 .parley-insight-block {
   padding-top: 26px;
   border-top: 1px solid rgba(5, 5, 5, 0.12);
-}
-.parley-journey-block h3,
-.parley-needs-block h3,
-.parley-insight-block h3 {
-  margin: 0;
-  color: #06124a;
-  font-size: calc(var(--project-body-font-size) * 1.3);
-  font-weight: 800;
-  line-height: 1.35;
-  letter-spacing: 0;
 }
 .parley-journey-block h3 span,
 .parley-needs-block h3 span,
@@ -742,15 +698,6 @@
   width: 100%;
   margin: 0 auto;
 }
-.parley-design-inner > h2 {
-  margin: 0 0 50px;
-  color: var(--parley-ink);
-  font-size: 42px;
-  font-weight: 500;
-  line-height: 1.08;
-  text-align: center;
-  letter-spacing: 0;
-}
 .parley-color-layout {
   display: grid;
   gap: 28px;
@@ -760,23 +707,12 @@
   align-content: center;
   gap: 16px;
 }
-.parley-color-copy h3,
-.parley-typo-block > h3,
-.parley-wire-block h3 {
-  margin: 0;
-  color: var(--parley-ink);
-  font-size: calc(var(--project-title-font-size) * 1.08);
-  font-weight: 800;
-  line-height: 1.2;
-  letter-spacing: 0;
-}
 .parley-color-copy p {
-  min-width: 360px;
   margin: 0;
   color: var(--parley-ink);
   font-size: var(--project-body-font-size);
   font-weight: 400;
-  line-height: 1.35;
+  line-height: 1.5;
   letter-spacing: 0;
 }
 .parley-color-card-list {
@@ -942,9 +878,6 @@
   gap: 28px;
   margin-top: 78px;
 }
-.parley-wire-block h3 {
-  margin-bottom: 4px;
-}
 .parley-wire-list {
   position: relative;
   display: grid;
@@ -1040,15 +973,6 @@
   width: 100%;
   margin: 0 auto;
 }
-.parley-code-inner > h2 {
-  margin: 0 0 54px;
-  color: var(--parley-navy);
-  font-size: calc(var(--project-title-font-size) * 2);
-  font-weight: 500;
-  line-height: 1.15;
-  text-align: center;
-  letter-spacing: 0;
-}
 .parley-code-list {
   display: grid;
   gap: 58px;
@@ -1116,12 +1040,7 @@
   box-shadow: 0 4px 8px rgba(12, 21, 82, 0.16);
 }
 .parley-code-card h3 {
-  margin: 0;
   color: var(--parley-navy);
-  font-size: calc(var(--project-title-font-size) * 0.78);
-  font-weight: 700;
-  line-height: 1.22;
-  letter-spacing: 0;
 }
 .parley-code-card p {
   margin: 0;
@@ -1143,15 +1062,6 @@
   width: 100%;
   margin: 0 auto;
 }
-.parley-desktop-inner > h2 {
-  margin: 0 0 54px;
-  color: var(--parley-navy);
-  font-size: calc(var(--project-title-font-size) * 2);
-  font-weight: 500;
-  line-height: 1.15;
-  text-align: center;
-  letter-spacing: 0;
-}
 .parley-desktop-compare {
   display: grid;
   gap: 58px;
@@ -1161,17 +1071,11 @@
   gap: 18px;
 }
 .parley-desktop-group h3 {
-  justify-self: start;
-  min-width: 142px;
-  margin: 0;
   padding: 12px 24px;
-  border-radius: 8px;
-  color: var(--parley-navy);
-  font-size: calc(var(--project-body-font-size) * 1.1);
-  font-weight: 800;
-  line-height: 1.2;
+  min-width: 142px;
+  justify-self: start;
   text-align: center;
-  letter-spacing: 0;
+  border-radius: 8px;
   background: var(--parley-mint);
   box-shadow: 0 4px 8px rgba(12, 21, 82, 0.12);
 }
@@ -1209,15 +1113,6 @@
   width: 100%;
   margin: 0 auto;
 }
-.parley-mobile-inner > h2 {
-  margin: 0 0 42px;
-  color: var(--parley-navy);
-  font-size: calc(var(--project-title-font-size) * 2);
-  font-weight: 500;
-  line-height: 1.15;
-  text-align: center;
-  letter-spacing: 0;
-}
 .parley-mobile-compare {
   display: grid;
   gap: 42px;
@@ -1228,17 +1123,11 @@
   gap: 18px;
 }
 .parley-mobile-group h3 {
-  justify-self: start;
-  min-width: 142px;
-  margin: 0;
   padding: 12px 24px;
-  border-radius: 8px;
-  color: var(--parley-navy);
-  font-size: calc(var(--project-body-font-size) * 1.1);
-  font-weight: 800;
-  line-height: 1.2;
+  min-width: 142px;
+  justify-self: start;
   text-align: center;
-  letter-spacing: 0;
+  border-radius: 8px;
   background: var(--parley-mint);
   box-shadow: 0 4px 8px rgba(12, 21, 82, 0.12);
 }
@@ -1291,13 +1180,7 @@
   z-index: 2;
 }
 .parley-point-card h3 {
-  margin: 0;
-  color: var(--parley-navy);
-  font-size: calc(var(--project-title-font-size) * 0.78);
-  font-weight: 700;
-  line-height: 1.24;
   text-align: center;
-  letter-spacing: 0;
 }
 .parley-point-card p {
   display: grid;
@@ -1359,14 +1242,8 @@
   transform: translateY(-4px);
 }
 .parley-outcome-card h3 {
-  margin: 0;
-  color: var(--parley-navy);
-  font-size: calc(var(--project-title-font-size) * 0.82);
   font-style: italic;
-  font-weight: 600;
-  line-height: 1.2;
   text-align: left;
-  letter-spacing: 0;
 }
 .parley-outcome-card p {
   margin: 0;

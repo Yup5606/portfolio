@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" type="image/svg+xml" href="image/common/youbin.svg" />
     <title>Rockfish Weatherwear | Park Yubin Portfolio</title>
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=select_check_box" />
     <link rel="stylesheet" href="css/common.css" />
     <link rel="stylesheet" href="css/rockfish.css" />
     <link rel="stylesheet" href="css/common_rwd.css" />
@@ -44,60 +46,759 @@
         </div>
       </section>
 
-      <!--개요 영역-->
-      <section class="image-story image-story--blue">
-        <img src="image/rockfish/extracted/04-image4_137_8182.png" alt="" />
-        <div>
-          <p class="eyebrow">Overview</p>
-          <h2>일상 속 날씨와 계절감을 브랜드 경험으로</h2>
-          <p>락피쉬웨더웨어의 클래식한 브랜드 톤과 상품 이미지를 유지하면서 룩북에서 상품 탐색까지 이어지는 구조로 정리했습니다.</p>
+      <!--브랜드 개요 영역-->
+      <section class="rockfish-overview-section" aria-labelledby="rockfish-overview-title">
+        <div class="rockfish-overview-inner">
+          <figure class="rockfish-overview-visual">
+            <img src="image/rockfish/rockfish-overview.jpg" alt="Rockfish Weatherwear 브랜드 이미지" />
+          </figure>
+
+          <div class="rockfish-overview-copy">
+            <article class="rockfish-overview-block">
+              <p class="rockfish-label">Why Rockfish?</p>
+              <h2 id="rockfish-overview-title">From Product-focused to Brand-focused</h2>
+              <p>
+                락피쉬 웨더웨어는 감각적인 브랜드 아이덴티티를 가지고 있지만, 기존 웹사이트에서는 브랜드 헤리티지와 무드가 충분히 전달되지 않고 있었습니다.
+              </p>
+              <p>브랜드 고유의 감성을 더욱 효과적으로 경험할 수 있도록 브랜드 중심의 UX로 재설계하였습니다.</p>
+            </article>
+
+            <article class="rockfish-overview-block">
+              <p class="rockfish-label">Overview</p>
+              <h2>British Weatherwear Inspired by Cornwall</h2>
+              <p>락피쉬 웨더웨어는 영국 콘월의 자연과 라이프스타일에서 영감을 받아 탄생한 브랜드입니다.</p>
+              <p>
+                기능적인 웨더웨어를 기반으로 감각적인 디자인과 브랜드 헤리티지를 함께 담아내고 있습니다. 클래식한 스타일과 현대적인 감각을 결합해 패션을 넘어 하나의 라이프스타일을 보여주는 브랜드입니다.
+              </p>
+            </article>
+          </div>
+        </div>
+
+        <div class="rockfish-tool-section" aria-labelledby="rockfish-tool-title">
+          <p class="rockfish-label" id="rockfish-tool-title">Tools</p>
+
+          <div class="rockfish-tool-group">
+            <article class="rockfish-tool-card">
+              <h3>Design</h3>
+              <ul class="rockfish-tool-list" aria-label="디자인 사용 툴">
+                <li>
+                  <img src="image/common/icon/figma_icon.svg" alt="" aria-hidden="true" />
+                  <span>Figma</span>
+                </li>
+                <li>
+                  <img src="image/common/icon/photoshop_icon.svg" alt="" aria-hidden="true" />
+                  <span>Photoshop</span>
+                </li>
+                <li>
+                  <img src="image/common/icon/illrst_icon.svg" alt="" aria-hidden="true" />
+                  <span>Illustrator</span>
+                </li>
+                <li>
+                  <img src="image/common/icon/premier_icon.svg" alt="" aria-hidden="true" />
+                  <span>Premiere Pro</span>
+                </li>
+              </ul>
+            </article>
+
+            <article class="rockfish-tool-card">
+              <h3>Code</h3>
+              <ul class="rockfish-tool-list" aria-label="코딩 사용 툴">
+                <li>
+                  <img src="image/common/icon/vscode_icon.svg" alt="" aria-hidden="true" />
+                  <span>VS Code</span>
+                </li>
+                <li>
+                  <img src="image/common/icon/jquery_icon.svg" alt="" aria-hidden="true" />
+                  <span>jQuery</span>
+                </li>
+              </ul>
+            </article>
+
+            <article class="rockfish-tool-card">
+              <h3>Deploy</h3>
+              <ul class="rockfish-tool-list" aria-label="배포 사용 툴">
+                <li>
+                  <img src="image/common/icon/github_logo.svg" alt="" aria-hidden="true" />
+                  <span>GitHub</span>
+                </li>
+                <li>
+                  <img src="image/common/icon/netlipy_icon.svg" alt="" aria-hidden="true" />
+                  <span>Netlify</span>
+                </li>
+              </ul>
+            </article>
+
+            <article class="rockfish-tool-card">
+              <h3>AI</h3>
+              <ul class="rockfish-tool-list" aria-label="AI 사용 툴">
+                <li>
+                  <img src="image/common/icon/chatgpt_icon.svg" alt="" aria-hidden="true" />
+                  <span>ChatGPT</span>
+                </li>
+              </ul>
+            </article>
+          </div>
         </div>
       </section>
 
-      <!--디자인 시스템 영역-->
-      <section class="content-section">
-        <header class="section-heading">
-          <p>Design System</p>
-          <h2>메인 컬러와 이미지 에셋을 기준으로 구성</h2>
-        </header>
-        <div class="frame-grid">
-          <figure><img src="image/rockfish/frame-781.svg" alt="락피쉬 시즌 이미지" /><figcaption>Season Look</figcaption></figure>
-          <figure><img src="image/rockfish/frame-782.svg" alt="락피쉬 상품 이미지" /><figcaption>Product Detail</figcaption></figure>
-          <figure><img src="image/rockfish/frame-783.svg" alt="락피쉬 라이프스타일 이미지" /><figcaption>Lifestyle Mood</figcaption></figure>
+      <!--페르소나 영역-->
+      <section class="rockfish-persona-section" aria-labelledby="rockfish-persona-title">
+        <div class="rockfish-persona-copy">
+          <p class="rockfish-label" id="rockfish-persona-title">Persona</p>
+          <h2>Target users who value fashion,<br />mood and authentic brand identity</h2>
+
+          <div class="rockfish-persona-text">
+            <p>
+              락피쉬 웨더웨어는 감각적인 스타일과 트렌디한 제품으로 주목받는 브랜드입니다. 하지만 브랜드 고유의 British Weatherwear
+              <strong>정체성과 헤리티지는 충분히 전달되지 않고 있었습니다.</strong>
+            </p>
+            <p>
+              이에 브랜드의 <strong>오리지널리티와 감성을 강화</strong>하고, 브랜드 무드 기반의 콘텐츠와
+              <strong>스타일 추천 영역을 추가</strong>하여 사용자가 브랜드 철학과 분위기를 자연스럽게 경험할 수 있도록 브랜드 중심 구조로 재설계하였습니다.
+            </p>
+          </div>
+
+          <article class="rockfish-insight-card">
+            <h3>Key Insight</h3>
+            <ul>
+              <li>20~30대 여성 소비자 중심</li>
+              <li>브랜드 무드와 스토리 선호</li>
+              <li>모바일 사용 비율이 높음</li>
+              <li>감성, 무드 기반 구매 성향</li>
+            </ul>
+          </article>
+        </div>
+
+        <div class="rockfish-persona-list">
+          <article class="rockfish-persona-card">
+            <img src="image/rockfish/persona_1.jpg" alt="김OO 디자이너 페르소나" />
+            <h3>김OO / 26세 디자이너</h3>
+            <p>예쁜 브랜드인 건 알겠는데 락피쉬만의 분위기는 잘 모르겠어요.</p>
+          </article>
+
+          <article class="rockfish-persona-card">
+            <img src="image/rockfish/persona_2.jpg" alt="정OO 패션 관심 사용자 페르소나" />
+            <h3>정OO / 29세 패션 관심 사용자</h3>
+            <p>브랜드는 감각적인데 조금 더 프리미엄한 느낌이 있었으면 좋겠어요.</p>
+          </article>
+
+          <article class="rockfish-persona-card">
+            <img src="image/rockfish/persona_3.jpg" alt="박OO 직장인 페르소나" />
+            <h3>박OO / 32세 직장인</h3>
+            <p>제품만 보는 느낌보다 락피쉬 스타일로 코디된 무드도 같이 보고 싶었어요.</p>
+          </article>
+
+          <article class="rockfish-persona-card">
+            <img src="image/rockfish/persona_4.jpg" alt="AOO 대학생 페르소나" />
+            <h3>AOO / 22세 대학생</h3>
+            <p>옷이나 슈즈를 살 때 브랜드가 제안하는 분위기도 중요하게 보는 편이에요.</p>
+          </article>
         </div>
       </section>
 
-      <!--데스크톱 화면 영역-->
-      <section class="content-section" id="screens">
-        <header class="section-heading">
-          <p>Desktop Screens</p>
-          <h2>화면 흐름을 섹션 단위로 분리</h2>
-        </header>
-        <div class="screen-grid">
-          <figure><img src="image/rockfish/extracted/13-image13_137_8182.png" alt="락피쉬 메인 화면" /><figcaption>Main Visual</figcaption></figure>
-          <figure><img src="image/rockfish/extracted/22-image22_137_8182.png" alt="락피쉬 브랜드 화면" /><figcaption>Brand Story</figcaption></figure>
-          <figure><img src="image/rockfish/extracted/26-image26_137_8182.png" alt="락피쉬 컬렉션 화면" /><figcaption>Collection</figcaption></figure>
-          <figure><img src="image/rockfish/extracted/30-image30_137_8182.png" alt="락피쉬 상품 화면" /><figcaption>Product Flow</figcaption></figure>
+      <!--사용자 경험 흐름 영역-->
+      <section class="rockfish-flow-section" aria-labelledby="rockfish-flow-title">
+        <div class="rockfish-flow-copy" data-aos="fade-up">
+          <p class="rockfish-label" id="rockfish-flow-title">User Experience Flow</p>
+          <p><strong>쇼핑몰 사이트로서의 경험은 이루어졌지만 브랜드의 무드는 보여지지 않았습니다.</strong></p>
+          <p>사용자가 락피쉬를 인식하고 탐색하는 과정에서 브랜드 무드가 어디서 약해지는지 정리 했습니다.</p>
+        </div>
+
+        <div class="rockfish-flow-list" aria-label="락피쉬 사용자 경험 흐름">
+          <article class="rockfish-flow-card is-active" data-flow-index="0" data-aos="fade-up">
+            <button type="button" aria-pressed="true">
+              <strong>01</strong>
+              <h3>First<br />impression</h3>
+              <p class="rockfish-flow-summary">감성은 보이지만 차별성은 약함</p>
+              <p>브랜드 헤리티지보다 트렌디한 패션 이미지가 먼저 전달 됩니다.</p>
+            </button>
+          </article>
+
+          <article class="rockfish-flow-card" data-flow-index="1" data-aos="fade-up" data-aos-delay="100">
+            <button type="button" aria-pressed="false">
+              <strong>02</strong>
+              <h3>Exploration</h3>
+              <p class="rockfish-flow-summary">상품 탐색은 가능하지만 브랜드 스토리는 흐림</p>
+              <p>제품 정보 중심 구조로 인해 브리티쉬 Weatherwear 무드가 약해집니다.</p>
+            </button>
+          </article>
+
+          <article class="rockfish-flow-card" data-flow-index="2" data-aos="fade-up" data-aos-delay="200">
+            <button type="button" aria-pressed="false">
+              <strong>03</strong>
+              <h3>Recognition</h3>
+              <p class="rockfish-flow-summary">기억은 남지만 정체성은 약하게 각인됨</p>
+              <p>브랜드는 기억되지만 왜 특별한 브랜드 인지는 명확히 남지 않습니다.</p>
+            </button>
+          </article>
+        </div>
+
+        <div class="rockfish-pain-list" aria-live="polite" aria-label="락피쉬 사용자 경험 문제점" data-aos="fade-up">
+          <article class="rockfish-pain-card">
+            <span>Pain Point 01</span>
+            <h3>브랜드의 헤리티지 전달 부족</h3>
+            <p>영국 해안 감성과 브랜드 배경이 충분히 전달되지 않아, 사용자가 브랜드를 단순히 트렌디한 패션 브랜드로 인식할 가능성이 있었습니다.</p>
+          </article>
         </div>
       </section>
 
-      <!--반응형 화면 영역-->
-      <section class="content-section">
-        <header class="section-heading">
-          <p>Responsive</p>
-          <h2>모바일 화면도 개별 에셋으로 관리</h2>
-        </header>
-        <div class="phone-row">
-          <figure><img src="image/rockfish/extracted/31-image31_137_8182.png" alt="락피쉬 모바일 화면" /></figure>
-          <figure><img src="image/rockfish/extracted/32-image32_137_8182.png" alt="락피쉬 모바일 화면" /></figure>
-          <figure><img src="image/rockfish/extracted/33-image33_137_8182.png" alt="락피쉬 모바일 화면" /></figure>
-          <figure><img src="image/rockfish/extracted/36-image36_137_8182.png" alt="락피쉬 모바일 화면" /></figure>
+      <!--솔루션 영역-->
+      <section class="rockfish-solution-section" aria-labelledby="rockfish-solution-title">
+        <div class="rockfish-solution-copy" data-aos="fade-up">
+          <p class="rockfish-label">Solution</p>
+          <h2 id="rockfish-solution-title" class="rockfish-solution-title">
+            브랜드의 분위기와 헤리티지를 자연스럽게 경험할 수 있도록 브랜드 중심 UX 구조로 재설계하였습니다.
+          </h2>
+          <p>
+            브랜드 무드와 감성을 강화하고, 콘텐츠 흐름과 시각적 경험을 개선하여 사용자가 브랜드를 더욱 직관적으로 인식할 수 있도록 구성하였습니다.
+          </p>
+        </div>
+
+        <div class="rockfish-solution-grid" aria-label="락피쉬 UX 개선 솔루션">
+          <article class="rockfish-solution-card" data-aos="fade-up">
+            <h3>01. Brand Identity Visual</h3>
+            <p>브랜드 무드를 직관적으로 전달하는 메인 비주얼로 개선하였습니다.</p>
+            <ul>
+              <li>영상 기반 히어로 섹션 구성</li>
+              <li>브리티시 웨더웨어 무드 강화</li>
+              <li>감성 타이포 중심 연출</li>
+            </ul>
+            <div class="rockfish-solution-effect">
+              <strong>Expected Effect</strong>
+              <p>브랜드 첫 인상 강화</p>
+              <p>브랜드 몰입감 향상</p>
+            </div>
+          </article>
+
+          <article class="rockfish-solution-card" data-aos="fade-up" data-aos-delay="100">
+            <h3>02. Heritage Storytelling</h3>
+            <p>브랜드 철학과 헤리티지를 자연스럽게 경험할 수 있도록 구성하였습니다.</p>
+            <ul>
+              <li>콘월 기반 브랜드 스토리 강조</li>
+              <li>브랜드 중심 콘텐츠 흐름 설계</li>
+              <li>감성 콘텐츠 강화</li>
+            </ul>
+            <div class="rockfish-solution-effect">
+              <strong>Expected Effect</strong>
+              <p>브랜드 정체성 전달 강화</p>
+              <p>감성적 브랜드 경험 형성</p>
+            </div>
+          </article>
+
+          <article class="rockfish-solution-card" data-aos="fade-up" data-aos-delay="200">
+            <h3>03. Mood-driven UX Flow</h3>
+            <p>브랜드 경험이 자연스럽게 이어지도록 콘텐츠 흐름을 재구성하였습니다.</p>
+            <ul>
+              <li>비주얼 → 브랜드 → 제품 흐름 설계</li>
+              <li>스타일 탐색 경험 강화</li>
+              <li>브랜드 중심 스크롤 구성</li>
+            </ul>
+            <div class="rockfish-solution-effect">
+              <strong>Expected Effect</strong>
+              <p>사용자 브랜드 이해도 향상</p>
+              <p>브랜드 기억 지속성 강화</p>
+            </div>
+          </article>
+
+          <article class="rockfish-solution-card" data-aos="fade-up" data-aos-delay="300">
+            <h3>04. Editorial Style Layout</h3>
+            <p>패션 브랜드 무드에 맞는 에디토리얼 스타일 레이아웃을 적용하였습니다.</p>
+            <ul>
+              <li>여백 중심 UI 구성</li>
+              <li>타이포그래피 강조</li>
+              <li>감성적 인터랙션 활용</li>
+            </ul>
+            <div class="rockfish-solution-effect">
+              <strong>Expected Effect</strong>
+              <p>프리미엄 브랜드 이미지 강화</p>
+              <p>브랜드 완성도 향상</p>
+            </div>
+          </article>
+        </div>
+
+        <article class="rockfish-project-goal" data-aos="fade-up">
+          <h3>Project Goal</h3>
+          <p class="rockfish-project-goal-title">단순 쇼핑몰이 아닌 브랜드를 경험하는 웹사이트로 개선을 목표하였습니다.</p>
+          <p>
+            락피쉬 웨더웨어의 British Weatherwear 감성과 브랜드 헤리티지를 중심으로 UX를 재구성하여, 브랜드의 분위기와 철학이 자연스럽게 전달될 수 있도록 개선하는 것을 목표하였습니다.
+          </p>
+        </article>
+      </section>
+
+      <!--컬러 시스템 영역-->
+      <section class="rockfish-color-section" aria-labelledby="rockfish-color-title">
+        <div class="rockfish-color-copy" data-aos="fade-up">
+          <p class="rockfish-label" id="rockfish-color-title">Color System</p>
+          <p>
+            Rockfish Weatherwear의 컬러 시스템은<br />
+            비 오는 날의 차분한 분위기와 영국 웨더웨어 특유의 헤리티지 감성을 중심으로 구성하였습니다.
+          </p>
+          <p>
+            메인 컬러인 딥 네이비는 영국 웨더웨어 특유의 클래식하고 신뢰감 있는 이미지를 표현하며, 브랜드의 기능성과 정체성을 강조합니다.
+          </p>
+          <p>
+            서브 컬러는 비 오는 날의 차분한 분위기를 담은 블루 그레이 톤으로 적용하여 안정적이고 미니멀한 무드를 형성하였으며,
+          </p>
+          <p>
+            포인트 컬러로는 20-30대 타깃층을 고려한 베이비 핑크 컬러를 활용해 부드럽고 트렌디한 감성을 더하여 사용자 시선을 자연스럽게 유도할 수 있도록 설계하였습니다.
+          </p>
+        </div>
+
+        <div class="rockfish-color-list" aria-label="락피쉬 컬러 시스템">
+          <article class="rockfish-color-card" data-aos="fade-up" data-color="main">
+            <img src="image/rockfish/color_1.svg" alt="딥 네이비 메인 컬러 무드 이미지" />
+            <span class="rockfish-color-chip" aria-hidden="true"></span>
+            <div class="rockfish-color-info">
+              <h3>Main Color #142A74</h3>
+              <ul>
+                <li>헤리티지 (Heritage)</li>
+                <li>깊이감 (Depth)</li>
+                <li>신뢰감 (Trust)</li>
+                <li>클래식 (Classic)</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="rockfish-color-card" data-aos="fade-up" data-aos-delay="100" data-color="sub">
+            <img src="image/rockfish/color_2.svg" alt="블루 그레이 서브 컬러 무드 이미지" />
+            <span class="rockfish-color-chip" aria-hidden="true"></span>
+            <div class="rockfish-color-info">
+              <h3>Sub Color #F2F4F7</h3>
+              <ul>
+                <li>차분함 (Calm)</li>
+                <li>안개 (Mist)</li>
+                <li>균형감 (Balance)</li>
+                <li>미니멀 (Minimal)</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="rockfish-color-card" data-aos="fade-up" data-aos-delay="200" data-color="point">
+            <img src="image/rockfish/color_3.svg" alt="베이비 핑크 포인트 컬러 무드 이미지" />
+            <span class="rockfish-color-chip" aria-hidden="true"></span>
+            <div class="rockfish-color-info">
+              <h3>Point Color #F6DFEA</h3>
+              <ul>
+                <li>트렌디 (Trendy)</li>
+                <li>소프트 (Soft)</li>
+                <li>캐주얼 (Casual)</li>
+                <li>감성 (Mood)</li>
+              </ul>
+            </div>
+          </article>
         </div>
       </section>
+
+      <!--타이포 시스템 영역-->
+      <section class="rockfish-typo-section" aria-labelledby="rockfish-typo-title">
+        <p class="rockfish-label" id="rockfish-typo-title" data-aos="fade-up">Typo System</p>
+
+        <div class="rockfish-typo-list">
+          <article class="rockfish-typo-row" data-aos="fade-up">
+            <div class="rockfish-typo-copy">
+              <h3><strong>Korean Title</strong> 부크크 명조</h3>
+              <p>브랜드의 헤리티지와 클래식한 감성을 표현하기 위해 사용하였습니다.</p>
+            </div>
+            <div class="rockfish-typo-sample rockfish-typo-sample--serif" aria-label="부크크 명조 폰트 굵기 예시">
+              <ul class="rockfish-typo-weight-list">
+                <li><span>Light</span><strong>Aa</strong></li>
+                <li><span>Bold</span><strong>Bb</strong></li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="rockfish-typo-row" data-aos="fade-up">
+            <div class="rockfish-typo-copy">
+              <h3><strong>English Title</strong> Playfair</h3>
+              <p>브랜드의 프리미엄 무드와 시각적 임팩트를 강조하기 위해 사용하였습니다.</p>
+            </div>
+            <div class="rockfish-typo-sample rockfish-typo-sample--playfair" aria-label="Playfair 폰트 굵기 예시">
+              <ul class="rockfish-typo-weight-list">
+                <li><span>Light</span><strong>Aa</strong></li>
+                <li><span>Regular</span><strong>Bb</strong></li>
+                <li><span>Medium</span><strong>Cc</strong></li>
+                <li><span>SemiBold</span><strong>Dd</strong></li>
+                <li><span>Bold</span><strong>Ee</strong></li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="rockfish-typo-row" data-aos="fade-up">
+            <div class="rockfish-typo-copy">
+              <h3><strong>Body Text</strong> Pretendard</h3>
+              <p>명확한 정보 전달과 높은 가독성을 위해 사용하였습니다.</p>
+            </div>
+            <div class="rockfish-typo-sample rockfish-typo-sample--sans" aria-label="Pretendard 폰트 굵기 예시">
+              <ul class="rockfish-typo-weight-list">
+                <li><span>Light</span><strong>Aa</strong></li>
+                <li><span>Regular</span><strong>Bb</strong></li>
+                <li><span>Medium</span><strong>Cc</strong></li>
+                <li><span>SemiBold</span><strong>Dd</strong></li>
+                <li><span>Bold</span><strong>Ee</strong></li>
+              </ul>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!--그리드 시스템 영역-->
+      <section class="rockfish-grid-section" aria-labelledby="rockfish-grid-title">
+        <div class="rockfish-grid-aside">
+          <p class="rockfish-label" id="rockfish-grid-title" data-aos="fade-up">Grid system</p>
+          <ul class="rockfish-grid-note" data-aos="fade-up" data-aos-delay="100">
+            <li>Pc - Margin 68px</li>
+            <li>Tb - Margin 8px</li>
+            <li>Mo - Margin 8px</li>
+          </ul>
+        </div>
+
+        <div class="rockfish-grid-display" aria-label="락피쉬 반응형 그리드 시스템">
+          <figure class="rockfish-grid-device rockfish-grid-device--pc" data-aos="fade-up">
+            <img src="image/rockfish/grid_pc.svg" alt="PC 화면 그리드 시스템" />
+          </figure>
+          <figure class="rockfish-grid-device rockfish-grid-device--tb" data-aos="fade-up" data-aos-delay="100">
+            <img src="image/rockfish/grid_tb.svg" alt="태블릿 화면 그리드 시스템" />
+          </figure>
+          <figure class="rockfish-grid-device rockfish-grid-device--mo" data-aos="fade-up" data-aos-delay="200">
+            <img src="image/rockfish/grid_mo.svg" alt="모바일 화면 그리드 시스템" />
+          </figure>
+        </div>
+      </section>
+
+      <!--포스터 디자인 영역-->
+      <section class="rockfish-poster-section" aria-labelledby="rockfish-poster-title">
+        <img class="rockfish-poster-phone" src="image/rockfish/poster_mockup.svg" alt="락피쉬 인스타그램 포스터 목업" data-aos="fade-up" />
+
+        <div class="rockfish-poster-copy" data-aos="fade-up" data-aos-delay="100">
+          <p class="rockfish-label" id="rockfish-poster-title">Black Rain Day</p>
+          <p>
+            Black Friday에서 착안한 ‘Black Rain Day’ 컨셉의 프로모션 포스터를 제작하였으며,<br />
+            비 오는 날의 무드와 브랜드 감성을 결합해 감각적인 비주얼로 재해석하였습니다.
+          </p>
+          <p>
+            또한 Up to -60% 할인 메시지를 강한 타이포와 컬러 대비를 통해 직관적으로 강조하여 사용자의 시선을 유도하고 프로모션 전달력을 높이고자 하였습니다.
+          </p>
+        </div>
+
+        <div class="rockfish-poster-list" aria-label="Black Rain Day 포스터 목록">
+          <button class="rockfish-poster-button" type="button" data-poster-src="image/rockfish/poster_3.jpg" data-poster-alt="Black Rain Day 부츠 포스터">
+            <img src="image/rockfish/poster_3.jpg" alt="Black Rain Day 부츠 포스터" />
+          </button>
+          <button class="rockfish-poster-button" type="button" data-poster-src="image/rockfish/poster_2.jpg" data-poster-alt="Black Rain Day 블루 부츠 포스터">
+            <img src="image/rockfish/poster_2.jpg" alt="Black Rain Day 블루 부츠 포스터" />
+          </button>
+          <button class="rockfish-poster-button" type="button" data-poster-src="image/rockfish/poster_1.jpg" data-poster-alt="Black Rain Day 프로모션 포스터">
+            <img src="image/rockfish/poster_1.jpg" alt="Black Rain Day 프로모션 포스터" />
+          </button>
+        </div>
+
+        <div class="rockfish-poster-modal" aria-hidden="true">
+          <button class="rockfish-poster-modal-close" type="button" aria-label="포스터 확대창 닫기">×</button>
+          <div class="rockfish-poster-modal-inner" role="dialog" aria-modal="true" aria-label="포스터 확대 보기">
+            <img src="image/rockfish/poster_3.jpg" alt="" />
+          </div>
+        </div>
+      </section>
+
+      <!--프로세스 상세 01 영역-->
+      <section class="rockfish-process-section rockfish-process-section--text-left" aria-labelledby="rockfish-process-responsive-title">
+        <div class="rockfish-process-copy" data-aos="fade-up">
+          <h2 class="rockfish-process-title" id="rockfish-process-responsive-title">01. Responsive Web Design</h2>
+
+          <div class="rockfish-process-body">
+            <p>
+              다양한 디바이스에서도 브랜드 무드가 자연스럽게 유지될 수 있도록 반응형 구조로 리디자인하였습니다.
+            </p>
+            <p>
+              PC, Tablet, Mobile 환경에 최적화된 레이아웃을 적용하고, 모바일 사용 환경을 고려해 메뉴 구조와 사용자 동선을 직관적으로 개선하였습니다.
+            </p>
+          </div>
+
+          <div class="rockfish-process-point">
+            <h3><span class="material-symbols-outlined" aria-hidden="true">select_check_box</span>Point</h3>
+            <ul>
+              <li>다양한 환경에서도 일관된 브랜드 경험 제공</li>
+              <li>모바일 사용성과 접근성 향상</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="rockfish-process-visual rockfish-process-visual--responsive rockfish-process-visual--right" aria-label="PC, 태블릿, 모바일 반응형 웹 디자인 화면" data-aos="fade-up" data-aos-delay="100">
+          <img class="rockfish-process-device rockfish-process-device--pc" src="image/rockfish/responsive_pc.svg" alt="락피쉬 PC 반응형 화면" />
+          <img class="rockfish-process-device rockfish-process-device--tb" src="image/rockfish/responsive_tb.svg" alt="락피쉬 태블릿 반응형 화면" />
+          <img class="rockfish-process-device rockfish-process-device--mo" src="image/rockfish/responsive_mo.svg" alt="락피쉬 모바일 반응형 화면" />
+        </div>
+      </section>
+
+      <!--프로세스 상세 02 영역-->
+      <section class="rockfish-process-section rockfish-process-section--text-right" aria-labelledby="rockfish-process-visual-title">
+        <div class="rockfish-process-copy" data-aos="fade-up">
+          <h2 class="rockfish-process-title" id="rockfish-process-visual-title">02. Main Visual Redesign</h2>
+
+          <div class="rockfish-process-body">
+            <p>
+              브랜드의 첫인상을 효과적으로 전달할 수 있도록 메인 비주얼 영역을 리디자인하였습니다.
+            </p>
+            <p>
+              영상 기반의 히어로 섹션과 브랜드 감성을 반영한 타이포 및 비주얼 요소를 활용해 몰입감을 강화하고 브랜드 무드를 직관적으로 전달하고자 하였습니다.
+            </p>
+          </div>
+
+          <div class="rockfish-process-point">
+            <h3><span class="material-symbols-outlined" aria-hidden="true">select_check_box</span>Point</h3>
+            <ul>
+              <li>브랜드 아이덴티티 전달 강화</li>
+              <li>감성적 사용자 경험 형성</li>
+            </ul>
+          </div>
+
+          <div class="rockfish-process-actions" aria-label="메인 비주얼 영상 링크">
+            <a href="https://youtu.be/4ojNHyTuSvM" target="_blank" rel="noreferrer">메인 영상 보러가기</a>
+            <a href="https://youtube.com/shorts/Z3JKPvkNOxg?feature=share" target="_blank" rel="noreferrer">숏폼 광고 보러가기</a>
+          </div>
+        </div>
+
+        <div class="rockfish-process-visual rockfish-process-video-visual" aria-label="메인 비주얼 영상 편집과 결과 화면" data-aos="fade-up" data-aos-delay="100">
+          <img class="rockfish-process-video rockfish-process-video--main" src="image/rockfish/video_1.jpg" alt="락피쉬 메인 영상 편집 화면" />
+          <img class="rockfish-process-video rockfish-process-video--shorts" src="image/rockfish/video_2.jpg" alt="락피쉬 숏폼 영상 편집 화면" />
+          <img class="rockfish-process-video rockfish-process-video--result" src="image/rockfish/video_3.jpg" alt="락피쉬 메인 비주얼 결과 화면" />
+        </div>
+      </section>
+
+      <!--프로세스 상세 03 영역-->
+      <section class="rockfish-process-section rockfish-process-section--text-left" aria-labelledby="rockfish-process-recommend-title">
+        <div class="rockfish-process-copy" data-aos="fade-up">
+          <h2 class="rockfish-process-title" id="rockfish-process-recommend-title">03. Product Recommendation Section</h2>
+
+          <div class="rockfish-process-body">
+            <p>
+              사용자가 브랜드의 다양한 제품을 보다 쉽게 탐색할 수 있도록 제품 추천 섹션과 코디 섹션을 추가 구성하였습니다.
+            </p>
+            <p>
+              직관적인 레이아웃과 카테고리 구성을 통해 사용자 탐색 흐름을 개선하고 제품 접근성을 높이고자 하였습니다.
+            </p>
+          </div>
+
+          <div class="rockfish-process-point">
+            <h3><span class="material-symbols-outlined" aria-hidden="true">select_check_box</span>Point</h3>
+            <ul>
+              <li>사용자 체류 시간 증가</li>
+              <li>제품 탐색 경험 강화</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="rockfish-process-visual rockfish-process-recommend-visual" aria-label="제품 추천 섹션과 코디 섹션 화면" data-aos="fade-up" data-aos-delay="100">
+          <img class="rockfish-process-recommend rockfish-process-recommend--style" src="image/rockfish/recommen_1.jpg" alt="락피쉬 추천 스타일 화면" />
+          <img class="rockfish-process-recommend rockfish-process-recommend--collection" src="image/rockfish/recommen_2.jpg" alt="락피쉬 컬렉션 상품 추천 화면" />
+          <img class="rockfish-process-recommend rockfish-process-recommend--moments" src="image/rockfish/recommen_3.jpg" alt="락피쉬 리얼 모먼츠 코디 화면" />
+        </div>
+      </section>
+
+      <!--프로세스 상세 04 영역-->
+      <section class="rockfish-process-section rockfish-process-section--text-right rockfish-process-section--brand" aria-labelledby="rockfish-process-brand-title">
+        <div class="rockfish-process-copy" data-aos="fade-up">
+          <h2 class="rockfish-process-title" id="rockfish-process-brand-title">04. Brand-centered Layout</h2>
+
+          <div class="rockfish-process-body">
+            <p>
+              제품 중심의 단순한 정보 전달 방식에서 벗어나 브랜드 아이덴티티와 헤리티지를 중심으로 레이아웃을 재구성하였습니다.
+            </p>
+            <p>
+              브랜드 스토리와 감성적인 비주얼 요소를 함께 활용하여 브랜드 경험 중심의 구조로 개선하였습니다.
+            </p>
+          </div>
+
+          <div class="rockfish-process-point">
+            <h3><span class="material-symbols-outlined" aria-hidden="true">select_check_box</span>Point</h3>
+            <ul>
+              <li>브랜드 헤리티지 전달 강화</li>
+              <li>브랜드 몰입도 및 인지도 향상</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="rockfish-process-visual rockfish-process-brand-visual" aria-label="기존 제품 중심 레이아웃과 개선된 브랜드 중심 레이아웃 비교" data-aos="fade-up" data-aos-delay="100">
+          <article class="rockfish-brand-phone-card">
+            <p class="rockfish-process-compare-label">As is</p>
+            <div class="rockfish-brand-phone" data-drag-scroll tabindex="0" aria-label="기존 락피쉬 모바일 화면 드래그 스크롤">
+              <div class="rockfish-brand-phone-screen">
+                <img class="rockfish-brand-phone-shot" src="image/rockfish/asis.jpg" alt="기존 락피쉬 모바일 화면 전체" draggable="false" />
+              </div>
+              <img class="rockfish-brand-phone-frame" src="image/rockfish/mo_mockup.png" alt="" aria-hidden="true" draggable="false" />
+            </div>
+          </article>
+
+          <article class="rockfish-brand-phone-card">
+            <p class="rockfish-process-compare-label">To be</p>
+            <div class="rockfish-brand-phone" data-drag-scroll tabindex="0" aria-label="개선된 락피쉬 모바일 화면 드래그 스크롤">
+              <div class="rockfish-brand-phone-screen">
+                <img class="rockfish-brand-phone-shot" src="image/rockfish/tobe.jpg" alt="개선된 락피쉬 모바일 화면 전체" draggable="false" />
+              </div>
+              <img class="rockfish-brand-phone-frame" src="image/rockfish/mo_mockup.png" alt="" aria-hidden="true" draggable="false" />
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!--프로세스 상세 05 영역-->
+      <section class="rockfish-process-section rockfish-process-section--text-right rockfish-process-section--publishing" aria-labelledby="rockfish-process-publishing-title">
+        <div class="rockfish-process-copy" data-aos="fade-up">
+          <h2 class="rockfish-process-title" id="rockfish-process-publishing-title">05. Publishing</h2>
+
+          <div class="rockfish-process-body">
+            <p>
+              브랜드 중심의 화면 구조가 다양한 디바이스에서도 안정적으로 유지될 수 있도록 HTML, CSS, JavaScript 기반으로 직접 퍼블리싱을 진행하였습니다.
+            </p>
+            <p>
+              Mobile First 방식을 적용하여 모바일부터 PC까지 일관된 레이아웃 경험을 구현하였습니다.
+            </p>
+          </div>
+
+          <div class="rockfish-process-point">
+            <h3><span class="material-symbols-outlined" aria-hidden="true">select_check_box</span>Point</h3>
+            <ul>
+              <li>HTML / CSS / JavaScript 기반 퍼블리싱</li>
+              <li>Mobile First 반응형 웹 구현</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="rockfish-process-visual rockfish-process-publishing-visual" aria-label="락피쉬 퍼블리싱 코드 화면" data-aos="fade-up" data-aos-delay="100">
+          <img class="rockfish-process-publishing rockfish-process-publishing--main" src="image/rockfish/publishing_1.jpg" alt="락피쉬 HTML 퍼블리싱 코드 화면" />
+          <img class="rockfish-process-publishing rockfish-process-publishing--style" src="image/rockfish/publishing_2.jpg" alt="락피쉬 공통 CSS와 반응형 CSS 코드 화면" />
+          <img class="rockfish-process-publishing rockfish-process-publishing--responsive" src="image/rockfish/publishing_3.jpg" alt="락피쉬 메인 CSS와 모바일 반응형 CSS 코드 화면" />
+        </div>
+      </section>
+
+      <!--프로세스 상세 06 영역-->
+      <section class="rockfish-process-section rockfish-process-section--text-left rockfish-process-section--interaction" aria-labelledby="rockfish-process-interaction-title">
+        <div class="rockfish-process-copy" data-aos="fade-up">
+          <h2 class="rockfish-process-title" id="rockfish-process-interaction-title">06. Interaction Design</h2>
+
+          <div class="rockfish-process-body">
+            <p>
+              사용자가 브랜드 콘텐츠를 자연스럽게 탐색할 수 있도록 스크롤 모션과 슬라이드 인터랙션을 적용하였습니다.
+            </p>
+            <p>
+              CSS Animation, JavaScript, Lenis, Swiper를 활용해 브랜드 무드에 맞는 부드러운 사용자 경험을 구현하였습니다.
+            </p>
+          </div>
+
+          <div class="rockfish-process-point">
+            <h3><span class="material-symbols-outlined" aria-hidden="true">select_check_box</span>Point</h3>
+            <ul>
+              <li>CSS Animation과 JavaScript를 활용한 인터랙션 구현</li>
+              <li>Lenis를 활용한 부드러운 스크롤 모션 적용</li>
+              <li>Swiper를 활용한 제품 및 스토어 슬라이드 구성</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="rockfish-process-visual rockfish-process-interaction-visual" aria-label="락피쉬 인터랙션 구현 코드 화면" data-aos="fade-up" data-aos-delay="100">
+          <img class="rockfish-process-interaction rockfish-process-interaction--animation" src="image/rockfish/inter_3.jpg" alt="CSS 애니메이션 키프레임 코드 화면" />
+          <img class="rockfish-process-interaction rockfish-process-interaction--hero" src="image/rockfish/inter_4.jpg" alt="메인 비주얼 인터랙션 JavaScript 코드 화면" />
+          <img class="rockfish-process-interaction rockfish-process-interaction--swiper" src="image/rockfish/inter_1.jpg" alt="스토어 Swiper 슬라이드 HTML 코드 화면" />
+          <img class="rockfish-process-interaction rockfish-process-interaction--lenis" src="image/rockfish/inter_2.jpg" alt="Lenis 부드러운 스크롤 JavaScript 코드 화면" />
+        </div>
+      </section>
+
+      <!--프로세스 상세 07 영역-->
+      <section class="rockfish-process-section rockfish-process-section--text-right rockfish-process-section--deployment" aria-labelledby="rockfish-process-deployment-title">
+        <div class="rockfish-process-copy" data-aos="fade-up">
+          <h2 class="rockfish-process-title" id="rockfish-process-deployment-title">07. Deployment</h2>
+
+          <div class="rockfish-process-body">
+            <p>
+              프로젝트의 버전 관리와 배포 과정을 직접 수행하며 실제 서비스 환경을 고려한 제작 경험을 쌓았습니다.
+            </p>
+            <p>
+              GitHub를 활용해 작업 내역을 관리하고, Netlify를 통해 웹사이트를 배포하여 다양한 환경에서 정상적으로 동작할 수 있도록 구현하였습니다.
+            </p>
+          </div>
+
+          <div class="rockfish-process-point">
+            <h3><span class="material-symbols-outlined" aria-hidden="true">select_check_box</span>Point</h3>
+            <ul>
+              <li>GitHub를 활용한 버전 관리</li>
+              <li>Netlify를 활용한 웹사이트 배포</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="rockfish-process-visual rockfish-process-deployment-visual" aria-label="GitHub와 Netlify 배포 화면 및 터미널 배포 과정" data-aos="fade-up" data-aos-delay="100">
+          <img class="rockfish-process-deployment rockfish-process-deployment--github" src="image/rockfish/depoly_1.jpg" alt="락피쉬 GitHub 저장소 화면" />
+          <img class="rockfish-process-deployment rockfish-process-deployment--netlify" src="image/rockfish/depoly_2.jpg" alt="락피쉬 Netlify 배포 화면" />
+          <img class="rockfish-process-deployment rockfish-process-deployment--terminal" src="image/rockfish/depoly_3.jpg" alt="락피쉬 터미널 배포 명령 화면" />
+        </div>
+      </section>
+
+      <!--최종 회고 영역-->
+      <section class="rockfish-outcome-section project-ending-section" aria-label="락피쉬 최종 결과 및 회고">
+        <div class="rockfish-outcome-inner">
+          <article class="rockfish-outcome-card" data-aos="fade-up">
+            <h3>Final Outcome</h3>
+            <p>
+              단순한 쇼핑 중심 구조에서 벗어나<br />
+              브랜드 감성을 강조한 웹사이트로 개선하였습니다.
+            </p>
+            <p>
+              British Weatherwear 감성을 기반으로 브랜드 헤리티지를 시각적으로 강화하고,<br />
+              사용자 중심의 UX 구조를 재설계하여 브랜드 무드를<br />
+              자연스럽게 경험할 수 있도록 구성하였습니다.
+            </p>
+          </article>
+
+          <article class="rockfish-outcome-card" data-aos="fade-up" data-aos-delay="100">
+            <h3>Reflection</h3>
+            <p>
+              이 프로젝트는 처음 진행한 웹사이트 리뉴얼 작업입니다.<br />
+              해당 작업을 통해 브랜드 경험은 단순한 비주얼만으로 완성되지 않는다는 점을 배울 수 있었습니다.
+            </p>
+            <p>
+              브랜드의 철학과 분위기를 사용자 흐름 안에 자연스럽게 녹여내는 과정의 중요성을 이해하였으며,<br />
+              콘텐츠 구성과 UX 설계를 통해 브랜드 몰입도를 높이는 방법을 경험할 수 있었습니다.
+            </p>
+            <p>또한 감성적인 비주얼과 정보 전달의 균형에 대해 깊이 고민하며 프로젝트를 진행하였습니다.</p>
+          </article>
+
+          <article class="rockfish-outcome-card" data-aos="fade-up" data-aos-delay="200">
+            <h3>What I Learned</h3>
+            <p>브랜드의 철학과 무드를 사용자에게 효과적으로 전달하는 방법을 배울 수 있었습니다.</p>
+            <p>
+              단순히 보기 좋은 화면을 만드는 것이 아니라,<br />
+              사용자의 스크롤 흐름과 콘텐츠 구조를 고려하여 브랜드 경험 중심의 UI를 설계하는 과정을 경험하였습니다.
+            </p>
+            <p>또한 레이아웃 구성과 콘텐츠 우선순위를 조정하며 실무적인 화면 설계 역량을 함께 키울 수 있었습니다.</p>
+          </article>
+
+          <article class="rockfish-outcome-card" data-aos="fade-up" data-aos-delay="300">
+            <h3>Areas for Improvement</h3>
+            <p>브랜드 경험에 집중한 만큼 실제 쇼핑 UX 요소와의 균형 부분에서는 아쉬움이 남았습니다.</p>
+            <p>
+              상품 정보 전달과 실질적인 사용자 행동 유도를 더욱 자연스럽게 연결하지 못한 부분이 있었으며,<br />
+              사용자 데이터 기반의 설계 경험이 부족했던 점도 보완이 필요하다고 느꼈습니다.
+            </p>
+          </article>
+
+          <article class="rockfish-outcome-card" data-aos="fade-up" data-aos-delay="400">
+            <h3>Future Direction</h3>
+            <p>앞으로는 브랜드 감성과 사용자 경험의 균형을 더욱 고려한 UI/UX 설계를 진행하고자 합니다.</p>
+            <p>
+              감성적인 비주얼뿐 아니라 실제 사용자 행동과 데이터 흐름을 함께 분석하며,<br />
+              브랜드 경험이 사용자 행동에 어떤 영향을 주는지 더욱 깊이 고민하는 디자이너로 성장하고 싶습니다.
+            </p>
+          </article>
+        </div>
+      </section>
+
     </main>
 
-    <div data-include="partials/footer.html"></div>
+    <div class="rockfish-footer-shell">
+      <div data-include="partials/footer.html"></div>
+    </div>
 
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
     <script src="js/common.js"></script>
     <script src="js/subpage.js"></script>
   </body>
