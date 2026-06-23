@@ -1,3 +1,4 @@
+// 공통 - 스크롤 reveal
 (function () {
   const revealItems = document.querySelectorAll(
     ".content-section, .image-story, .parley-role-section, .parley-research-section, .parley-persona-section, .parley-point-section"
@@ -24,6 +25,7 @@
   revealItems.forEach((item) => observer.observe(item));
 })();
 
+// 팔리 - Pie chart
 (function () {
   const charts = document.querySelectorAll(".parley-pie-chart");
   const namespace = "http://www.w3.org/2000/svg";
@@ -180,6 +182,7 @@
   requestChartCheck();
 })();
 
+// 팔리 - Skill hover
 (function () {
   const skillItems = document.querySelectorAll(".parley-skill-list li");
 
@@ -195,6 +198,7 @@
   });
 })();
 
+// 팔리 - Wireframe tab
 (function () {
   const wireItems = document.querySelectorAll(".parley-wire-list li");
 
@@ -221,6 +225,7 @@
   });
 })();
 
+// 롯데 - Component tabs
 (function () {
   const tabGroups = document.querySelectorAll(".lotte-component-tabs ul");
 
@@ -245,6 +250,7 @@
   });
 })();
 
+// 롯데 - Wireframe magnifier
 (function () {
   const wireframeShots = document.querySelectorAll(".lotte-wireframe-shot");
 
@@ -293,6 +299,7 @@
   });
 })();
 
+// 락피쉬 - User Experience Flow - Pain Point 전환
 (function () {
   const flowCards = document.querySelectorAll(".rockfish-flow-card");
   const painList = document.querySelector(".rockfish-pain-list");
@@ -320,7 +327,16 @@
     }
   ];
 
-  const setFlowActive = (index) => {
+  const updatePainContent = (index) => {
+    painCard.querySelector("span").textContent = painData[index].label;
+    painCard.querySelector("h3").textContent = painData[index].title;
+    painCard.querySelector("p").textContent = painData[index].text;
+    painCard.removeAttribute("data-motion");
+    void painCard.offsetWidth;
+    painCard.dataset.motion = String(index);
+  };
+
+  const setFlowActive = (index, animate = true) => {
     flowCards.forEach((card, cardIndex) => {
       const button = card.querySelector("button");
       const isActive = cardIndex === index;
@@ -329,14 +345,17 @@
       button?.setAttribute("aria-pressed", String(isActive));
     });
 
+    if (!animate) {
+      updatePainContent(index);
+      return;
+    }
+
     painList.classList.add("is-changing");
 
     window.setTimeout(() => {
-      painCard.querySelector("span").textContent = painData[index].label;
-      painCard.querySelector("h3").textContent = painData[index].title;
-      painCard.querySelector("p").textContent = painData[index].text;
+      updatePainContent(index);
       painList.classList.remove("is-changing");
-    }, 180);
+    }, 240);
   };
 
   flowCards.forEach((card) => {
@@ -347,9 +366,10 @@
     });
   });
 
-  setFlowActive(0);
+  setFlowActive(0, false);
 })();
 
+// 락피쉬 - Poster modal
 (function () {
   const posterSection = document.querySelector(".rockfish-poster-section");
 
@@ -397,6 +417,7 @@
   });
 })();
 
+// 락피쉬 - Brand phone drag scroll
 (function () {
   const phones = document.querySelectorAll("[data-drag-scroll]");
 
@@ -470,6 +491,7 @@
   });
 })();
 
+// 공통 - AOS
 (function () {
   if (!window.AOS) {
     return;
@@ -483,6 +505,7 @@
   });
 })();
 
+// 공통 - Project nav scroll
 (function () {
   const initProjectNav = () => {
     const projectNav = document.querySelector(".project-page .site-nav");

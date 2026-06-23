@@ -1,4 +1,179 @@
 /*반응형 영역*/
+@media (min-width: 500px) and (max-width: 768px) {
+  .rockfish-process-visual {
+    width: min(100%, 560px);
+  }
+  .rockfish-process-visual--responsive,
+  .rockfish-process-video-visual,
+  .rockfish-process-recommend-visual {
+    display: block;
+  }
+  .rockfish-process-device,
+  .rockfish-process-video,
+  .rockfish-process-recommend {
+    position: absolute;
+  }
+  .rockfish-process-visual--responsive {
+    min-height: clamp(300px, 56vw, 420px);
+  }
+  .rockfish-process-device--pc {
+    top: 0;
+    left: 0;
+    width: 78%;
+  }
+  .rockfish-process-device--tb {
+    top: 15%;
+    right: 0;
+    width: 34%;
+  }
+  .rockfish-process-device--mo {
+    right: 31%;
+    bottom: 2%;
+    width: 18%;
+  }
+  .rockfish-process-video-visual {
+    min-height: clamp(330px, 62vw, 470px);
+    margin-bottom: 124px;
+    padding-bottom: 0;
+  }
+  .rockfish-process-video--main {
+    top: 0;
+    right: 0;
+    width: 76%;
+  }
+  .rockfish-process-video--shorts {
+    bottom: 0;
+    left: 0;
+    width: 64%;
+  }
+  .rockfish-process-video--result {
+    right: 3%;
+    bottom: -15%;
+    width: 64%;
+  }
+  .rockfish-process-actions--visual {
+    position: absolute;
+    right: 0;
+    bottom: -124px;
+    left: 0;
+    z-index: 5;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .rockfish-process-recommend-visual {
+    min-height: clamp(420px, 73vw, 540px);
+  }
+  .rockfish-process-recommend--style {
+    top: 0;
+    right: 20%;
+    width: 78%;
+  }
+  .rockfish-process-recommend--collection {
+    top: 30%;
+    right: 0;
+    width: 66%;
+  }
+  .rockfish-process-recommend--moments {
+    bottom: 0;
+    left: 0;
+    width: 82%;
+  }
+  .rockfish-process-publishing-visual,
+  .rockfish-process-interaction-visual {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 14px;
+  }
+  .rockfish-process-publishing--main {
+    grid-column: 1 / -1;
+  }
+  .rockfish-process-interaction-visual {
+    align-items: end;
+  }
+  .rockfish-process-deployment-visual {
+    position: relative;
+    display: block;
+    min-height: clamp(330px, 65vw, 460px);
+    margin-bottom: clamp(44px, 8vw, 64px);
+    padding-bottom: 0;
+  }
+  .rockfish-process-deployment {
+    position: absolute;
+  }
+  .rockfish-process-deployment--github {
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 68%;
+  }
+  .rockfish-process-deployment--netlify {
+    bottom: -25%;
+    left: 7%;
+    z-index: 2;
+    width: 68%;
+  }
+  .rockfish-process-deployment--terminal {
+    right: 0;
+    bottom: -2%;
+    z-index: 3;
+    width: 45%;
+  }
+}
+
+@media (min-width: 769px) {
+  .rockfish-flow-card button::before {
+    width: 13px;
+    height: 13px;
+    box-shadow: 0 0 0 8px rgba(246, 223, 234, 0.1);
+  }
+  .rockfish-flow-card.is-active button::before {
+    box-shadow: 0 0 0 10px rgba(246, 223, 234, 0.18);
+  }
+  .rockfish-flow-card button > p:not(.rockfish-flow-summary) {
+    display: block;
+  }
+  .rockfish-color-list {
+    display: grid;
+  }
+  .rockfish-color-card {
+    flex: initial;
+    width: 100%;
+    max-width: none;
+  }
+  .rockfish-process-visual {
+    justify-self: stretch;
+    width: auto;
+    max-width: none;
+  }
+  .rockfish-process-visual--responsive,
+  .rockfish-process-video-visual,
+  .rockfish-process-recommend-visual {
+    display: block;
+  }
+  .rockfish-process-device,
+  .rockfish-process-video,
+  .rockfish-process-recommend {
+    position: absolute;
+  }
+  .rockfish-process-device--pc {
+    top: 0;
+    left: 0;
+  }
+  .rockfish-process-actions--copy {
+    display: flex;
+  }
+  .rockfish-process-actions--visual {
+    display: none;
+  }
+  .rockfish-process-actions {
+    width: auto;
+    max-width: none;
+  }
+  .rockfish-process-actions a {
+    flex: 0 0 auto;
+    max-width: none;
+  }
+}
+
 @media (min-width: 769px) and (max-width: 1280px) {
   .rockfish-hero .project-showcase-copy {
     padding-top: 62px;
@@ -55,7 +230,6 @@
     grid-template-columns: minmax(0, 0.92fr) minmax(0, 1.08fr);
     align-items: start;
     gap: 42px;
-    min-height: 150vh;
     padding: 96px 56px;
     overflow: visible;
     background-attachment: fixed;
@@ -74,6 +248,8 @@
     padding: 28px;
   }
   .rockfish-persona-list {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    justify-content: stretch;
     gap: 24px;
     overflow: visible;
   }
@@ -118,6 +294,12 @@
   }
   .rockfish-flow-card strong {
     font-size: calc(var(--project-title-font-size) * 1.8);
+  }
+  .rockfish-flow-card h3 {
+    font-size: calc(var(--project-title-font-size) * 0.82);
+  }
+  .rockfish-flow-card .rockfish-flow-summary {
+    font-size: calc(var(--project-body-font-size) * 0.92);
   }
   .rockfish-pain-list {
     gap: 20px;
@@ -165,7 +347,7 @@
     padding: 96px 56px 116px;
   }
   .rockfish-color-copy {
-    gap: 28px;
+    gap: 15px;
     max-width: 760px;
   }
   .rockfish-color-list {
@@ -338,49 +520,58 @@
   }
   .rockfish-process-device--tb {
     top: 16%;
+    right: 7%;
     width: 31%;
   }
   .rockfish-process-device--mo {
-    right: 26%;
+    right: 40%;
+    bottom: 5%;
     width: 17%;
   }
-  .rockfish-process-visual--left .rockfish-process-device--mo,
-  .rockfish-process-visual--reverse .rockfish-process-device--mo {
-    left: 26%;
-  }
   .rockfish-process-actions {
-    gap: 14px;
+    gap: 18px;
     margin-top: 2px;
   }
   .rockfish-process-actions a {
-    min-width: 150px;
-    min-height: 46px;
-    padding: 0 18px;
-    font-size: calc(var(--project-body-font-size) * 0.88);
+    min-width: 170px;
+    min-height: 50px;
+    padding: 0 26px;
+    font-size: 16px;
   }
   .rockfish-process-video-visual {
     min-height: clamp(310px, 31vw, 430px);
   }
   .rockfish-process-video--main {
+    top: 0;
+    right: 0;
     width: 78%;
   }
   .rockfish-process-video--shorts {
+    bottom: 0;
+    left: 0;
     width: 68%;
   }
   .rockfish-process-video--result {
+    right: 4%;
+    bottom: -32%;
     width: 70%;
   }
   .rockfish-process-recommend-visual {
     min-height: clamp(420px, 45vw, 590px);
   }
   .rockfish-process-recommend--style {
+    top: 0;
+    right: 17%;
     width: 78%;
   }
   .rockfish-process-recommend--collection {
     top: 30%;
+    right: 0;
     width: 66%;
   }
   .rockfish-process-recommend--moments {
+    bottom: 0;
+    left: 0;
     width: 82%;
   }
   .rockfish-process-brand-visual {
@@ -391,6 +582,13 @@
   }
   .rockfish-brand-phone {
     width: min(19vw, 178px);
+  }
+  .rockfish-brand-phone::before,
+  .rockfish-brand-phone::after {
+    right: -20px;
+  }
+  .rockfish-brand-phone::before {
+    height: 84px;
   }
   .rockfish-process-publishing-visual {
     grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -404,9 +602,6 @@
     gap: 14px;
     align-items: end;
   }
-  .rockfish-process-interaction {
-    border-radius: var(--rockfish-process-image-radius);
-  }
   .rockfish-process-deployment-visual {
     position: relative;
     display: block;
@@ -415,7 +610,6 @@
   }
   .rockfish-process-deployment {
     position: absolute;
-    border-radius: var(--rockfish-process-image-radius);
   }
   .rockfish-process-deployment--github {
     top: 0;
@@ -424,7 +618,7 @@
     width: 70%;
   }
   .rockfish-process-deployment--netlify {
-    bottom: -40px;
+    bottom: -60px;
     left: 0;
     z-index: 2;
     width: 70%;
@@ -895,7 +1089,6 @@
     padding-left: 18px;
     font-size: clamp(20px, 1.25vw, 24px);
   }
-  .rockfish-insight-card h3::before,
   .rockfish-insight-card li::before,
   .rockfish-solution-effect p::before,
   .rockfish-process-point li::before {
@@ -911,16 +1104,13 @@
   }
   .rockfish-process-device--tb {
     top: 14%;
+    right: 0;
     width: 31.4%;
   }
   .rockfish-process-device--mo {
     right: 28%;
     bottom: -2%;
     width: 17.2%;
-  }
-  .rockfish-process-visual--left .rockfish-process-device--mo,
-  .rockfish-process-visual--reverse .rockfish-process-device--mo {
-    left: 28%;
   }
   .rockfish-process-actions {
     gap: clamp(18px, 1.4vw, 28px);
@@ -937,9 +1127,13 @@
     min-height: clamp(430px, 31vw, 620px);
   }
   .rockfish-process-video--main {
+    top: 0;
+    right: 0;
     width: 75%;
   }
   .rockfish-process-video--shorts {
+    bottom: 0;
+    left: 0;
     width: 63%;
   }
   .rockfish-process-video--result {
@@ -949,9 +1143,6 @@
   }
   .rockfish-process-recommend-visual {
     min-height: clamp(560px, 39vw, 760px);
-  }
-  .rockfish-process-recommend {
-    border-radius: var(--rockfish-process-image-radius);
   }
   .rockfish-process-recommend--style {
     top: 0;
@@ -975,6 +1166,19 @@
   .rockfish-brand-phone {
     width: clamp(210px, 15vw, 270px);
   }
+  .rockfish-brand-phone::before,
+  .rockfish-brand-phone::after {
+    right: -26px;
+  }
+  .rockfish-brand-phone::before {
+    width: 4px;
+    height: 104px;
+  }
+  .rockfish-brand-phone::after {
+    width: 10px;
+    height: 10px;
+    margin-right: -3px;
+  }
 
   .rockfish-brand-phone-screen {
     border-radius: 20px;
@@ -992,16 +1196,10 @@
   .rockfish-process-publishing--main {
     grid-column: 1 / -1;
   }
-  .rockfish-process-publishing {
-    border-radius: var(--rockfish-process-image-radius);
-  }
   .rockfish-process-interaction-visual {
     grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: clamp(16px, 1.1vw, 22px);
     align-items: start;
-  }
-  .rockfish-process-interaction {
-    border-radius: var(--rockfish-process-image-radius);
   }
   .rockfish-process-interaction--swiper {
     margin-top: clamp(28px, 2.4vw, 46px);
@@ -1017,7 +1215,6 @@
   }
   .rockfish-process-deployment {
     position: absolute;
-    border-radius: var(--rockfish-process-image-radius);
   }
   .rockfish-process-deployment--github {
     top: 0;
