@@ -1,4 +1,5 @@
 (function () {
+  // 어바웃 - Side nav active
   const sideLinks = Array.from(document.querySelectorAll(".about-side-nav a[href^='#']"));
   const sections = sideLinks
     .map((link) => ({
@@ -66,6 +67,7 @@
 
   updateActiveSection();
 
+  // 어바웃 - History drag scroll
   const historyTrack = document.querySelector(".history-track");
 
   if (historyTrack) {
