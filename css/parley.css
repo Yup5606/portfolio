@@ -25,7 +25,6 @@ h3 {
   --parley-mint-hover: #74c9ce;
   --parley-bg: #f9f9f9;
   --parley-ink: #222;
-  --parley-light-gray: #f1f2f3;
   --parley-light-gray-rgb: 241, 242, 243;
   --parley-light-text: #fff;
   background: var(--parley-bg);
@@ -1244,6 +1243,7 @@ h3 {
 .parley-outcome-card h3 {
   font-style: italic;
   text-align: left;
+  color: var(--parley-navy);
 }
 .parley-outcome-card p {
   margin: 0;

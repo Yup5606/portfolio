@@ -10,8 +10,6 @@
 
 /*인덱스 페이지 영역*/
 .index-page {
-  --footer-color: rgba(255, 255, 255, 0.9);
-  --footer-line: rgba(255, 255, 255, 0.9);
   min-height: 100vh;
   overflow-x: hidden;
   overflow-y: auto;
@@ -180,8 +178,6 @@
   overflow: hidden;
   color: var(--white);
   background: #222;
-  --footer-color: rgba(255, 255, 255, 0.7);
-  --footer-line: rgba(255, 255, 255, 0.7);
   transition: opacity 0.7s ease, visibility 0.7s ease;
 }
 .page-loader-text {
@@ -264,8 +260,6 @@
   min-height: 100vh;
   overflow: hidden;
   color: var(--white);
-  --footer-color: rgba(255, 255, 255, 0.7);
-  --footer-line: rgba(255, 255, 255, 0.7);
   opacity: 0;
   transform: translate3d(100%, 0, 0);
   transition: transform 1.15s cubic-bezier(0.19, 1, 0.22, 1), opacity 0.72s ease;

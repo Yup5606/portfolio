@@ -1,11 +1,11 @@
 /*롯데 히어로 영역*/
 .lotte-project {
   --lotte-red: #ed1c24;
-  --lotte-hover: #c9161d;
-  --lotte-bg: #fffbfb;
+  --lotte-hover: #ca161c;
+  --lotte-bg: #fff7f8;
   --lotte-ink: #050505;
   --lotte-text: #222222;
-  --lotte-card: #eeeeee;
+  --lotte-card: #ffffff;
   --lotte-wire-bg: #f1f1f1;
   background: var(--lotte-bg);
 }
@@ -191,15 +191,14 @@
   margin-bottom: 24px;
   color: var(--lotte-ink);
   font-size: var(--project-body-font-size);
-  font-weight: 800;
+  font-weight: 700;
   line-height: 1.35;
 }
 .lotte-issue-list p {
   margin: 0;
   color: var(--lotte-ink);
   font-size: var(--project-body-font-size);
-  font-weight: 500;
-  line-height: 1.45;
+  line-height: 1.5;
 }
 
 /*롯데 타깃 페르소나 영역*/
@@ -243,37 +242,32 @@
   height: 100%;
   min-width: 300px;
   max-width: 400px;
-  border: 1px solid rgba(5, 5, 5, 0.08);
   border-radius: 16px;
   overflow: hidden;
   color: var(--lotte-ink);
   background: var(--white);
-  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.07);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.07);
   transition: transform 0.45s ease, box-shadow 0.45s ease;
 }
 .lotte-persona-card:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 18px 42px rgba(0, 0, 0, 0.12);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.12);
 }
 .lotte-persona-card > img {
   width: 100%;
   aspect-ratio: 1.26 / 1;
   object-fit: cover;
   object-position: center;
-  background: var(--lotte-card);
 }
 .lotte-persona-content {
   display: grid;
   align-content: start;
   gap: 24px;
-  padding: 28px 22px 32px;
+  padding: 32px 22px;
 }
 .lotte-persona-header {
   display: flex;
   align-items: baseline;
   justify-content: space-between;
-  gap: 16px;
-  min-width: 0;
 }
 .lotte-persona-header h3 {
   margin: 0;
@@ -368,7 +362,7 @@
   margin: 0 0 12px;
   color: var(--lotte-ink);
   font-size: var(--project-body-font-size);
-  font-weight: 900;
+  font-weight: 700;
   line-height: 1.2;
 }
 .lotte-persona-needs ul {
@@ -479,6 +473,7 @@
   color: rgba(255, 255, 255, 0.86);
   font-size: var(--project-body-font-size);
   font-weight: 300;
+  line-height: 1.5;
 }
 .lotte-typo-layout {
   display: grid;
@@ -618,14 +613,14 @@
   justify-content: center;
   min-height: var(--lotte-component-height);
   width: 100%;
-  padding: 0 4px 6px;
-  border: 0;
+  padding: 0 4px;
+  /* border: 0; */
   color: rgba(255, 255, 255, 0.48);
   font-size: 11px;
   font-weight: 700;
   line-height: 1.2;
   white-space: nowrap;
-  background: transparent;
+  /* background: transparent; */
   cursor: pointer;
   transition: color 0.25s ease;
 }
@@ -639,9 +634,9 @@
 .lotte-component-tabs button.is-active::after {
   content: "";
   position: absolute;
-  right: 4px;
+  width: 100%;
   bottom: 0;
-  left: 4px;
+  left: 0;
   height: 1px;
   background: var(--lotte-red);
 }

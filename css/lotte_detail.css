@@ -31,12 +31,10 @@
   display: grid;
   place-items: center;
   justify-self: center;
-  order: -1;
+  margin: 40px;
   width: 250px;
   height: 250px;
-  border: 1px solid rgba(5, 5, 5, 0.12);
   border-radius: 50%;
-  aspect-ratio: 1;
   background: rgba(237, 28, 36, 0.055);
 }
 .lotte-goal-visual::before {
@@ -454,32 +452,38 @@
   box-shadow: 0 16px 38px rgba(17, 17, 17, 0.08);
 }
 .lotte-compare-point-list {
-  display: grid;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   gap: 26px;
   margin: 0;
   padding: 0;
   list-style: none;
 }
 .lotte-compare-point-list li {
-  display: grid;
-  grid-template-columns: 86px minmax(0, 1fr);
+  display: flex;
+  flex: 1 1 320px;
   align-items: center;
-  gap: 22px;
+  gap: 20px;
+  max-width: 430px;
 }
 .lotte-compare-point-list > li > span {
+  flex: 0 0 auto;
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 86px;
-  height: 86px;
+  width: 54px;
+  height: 54px;
   border-radius: 50%;
   color: var(--lotte-red);
-  font-size: 48px;
+  font-size: 26px;
   background: rgba(237, 28, 36, 0.08);
 }
 .lotte-compare-point-list div {
   display: grid;
+  flex: 1 1 auto;
   gap: 8px;
+  min-width: 0;
 }
 .lotte-compare-point-list h3 {
   margin: 0 0 6px;

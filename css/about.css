@@ -9,6 +9,8 @@
   --about-accent: #3f5f55;
   --about-card: rgba(255, 255, 255, 0.54);
   --about-card-strong: rgba(255, 255, 255, 0.76);
+  --footer-color: var(--about-ink);
+  --footer-line: var(--about-line);
   overflow-x: hidden;
   color: var(--about-ink);
   background:

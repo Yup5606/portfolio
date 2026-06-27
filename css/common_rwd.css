@@ -2,7 +2,6 @@
 @media (min-width: 769px) {
   :root {
     --project-title-font-size: clamp(24px, 2.3vw, 32px);
-    --project-header-font-size: clamp(22px, 1.65vw, 28px);
     --project-body-font-size: clamp(14px, 1.25vw, 16px);
     --project-skill-icon-size: clamp(64px, 5vw, 80px);
   }
@@ -138,7 +137,7 @@
   .project-showcase-mockup {
     width: min(86vw, 920px);
     margin-top: 48px;
-    margin-bottom: 132px;
+    margin-bottom: 20%;
   }
   .project-showcase-actions {
     position: absolute;
@@ -166,7 +165,7 @@
   }
   .project-showcase-info {
     flex: 0 1 auto;
-    font-size: 17px;
+    font-size: 14px;
   }
   .project-showcase-info strong {
     font-size: 19px;
