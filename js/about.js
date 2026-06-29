@@ -67,6 +67,135 @@
 
   updateActiveSection();
 
+  // 어바웃 - Keyword tabs
+  const keywordTabs = Array.from(document.querySelectorAll("[data-keyword-tab]"));
+  const keywordPanels = Array.from(document.querySelectorAll("[data-keyword-panel]"));
+  const keywordTabList = document.querySelector(".keyword-tab-list");
+
+  const activateKeyword = (activeTab) => {
+    keywordTabs.forEach((tab) => {
+      const isActive = tab === activeTab;
+
+      tab.classList.toggle("is-active", isActive);
+      tab.setAttribute("aria-selected", String(isActive));
+    });
+
+    keywordPanels.forEach((panel) => {
+      const isActive = panel.id === activeTab.getAttribute("aria-controls");
+
+      panel.classList.toggle("is-active", isActive);
+      panel.hidden = !isActive;
+    });
+  };
+
+  if (keywordTabList) {
+    keywordTabList.addEventListener("click", (e) => {
+      const tab = e.target.closest("[data-keyword-tab]");
+
+      if (tab) {
+        activateKeyword(tab);
+      }
+    });
+
+    keywordTabList.addEventListener("mouseover", (e) => {
+      const tab = e.target.closest("[data-keyword-tab]");
+
+      if (tab) {
+        activateKeyword(tab);
+      }
+    });
+  }
+
+  keywordTabs.forEach((tab) => {
+    tab.addEventListener("focus", () => activateKeyword(tab));
+    tab.addEventListener("keydown", (e) => {
+      const currentIndex = keywordTabs.indexOf(tab);
+
+      if (e.key !== "ArrowRight" && e.key !== "ArrowLeft") {
+        return;
+      }
+
+      e.preventDefault();
+
+      const nextIndex =
+        e.key === "ArrowRight"
+          ? (currentIndex + 1) % keywordTabs.length
+          : (currentIndex - 1 + keywordTabs.length) % keywordTabs.length;
+
+      keywordTabs[nextIndex].focus();
+    });
+  });
+
+  // 어바웃 - Tool disclosure cards
+  const toolGroups = Array.from(document.querySelectorAll(".tool-list"));
+  const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+  const animateTool = (tool, shouldOpen, options = {}) => {
+    const summary = tool.querySelector("summary");
+
+    if (!summary) {
+      tool.open = shouldOpen;
+      return;
+    }
+
+    if (reducedMotion || options.instant) {
+      tool.style.height = "";
+      tool.style.overflow = "";
+      tool.open = shouldOpen;
+      return;
+    }
+
+    const startHeight = tool.offsetHeight;
+    tool.style.height = `${startHeight}px`;
+    tool.style.overflow = "hidden";
+
+    if (shouldOpen) {
+      tool.open = true;
+    }
+
+    const endHeight = shouldOpen ? tool.scrollHeight : summary.offsetHeight + 2;
+
+    requestAnimationFrame(() => {
+      tool.style.height = `${endHeight}px`;
+    });
+
+    const finishAnimation = (e) => {
+      if (e.propertyName !== "height") {
+        return;
+      }
+
+      tool.removeEventListener("transitionend", finishAnimation);
+
+      if (!shouldOpen) {
+        tool.open = false;
+      }
+
+      tool.style.height = "";
+      tool.style.overflow = "";
+    };
+
+    tool.addEventListener("transitionend", finishAnimation);
+  };
+
+  toolGroups.forEach((group) => {
+    const tools = Array.from(group.querySelectorAll(".tool-item"));
+
+    tools.forEach((tool) => {
+      tool.addEventListener("click", (e) => {
+        e.preventDefault();
+        const shouldOpen = !tool.open;
+
+        tools.forEach((item) => {
+          if (item !== tool && item.open) {
+            animateTool(item, false, { instant: true });
+          }
+        });
+
+        animateTool(tool, shouldOpen);
+      });
+    });
+  });
+
   // 어바웃 - History drag scroll
   const historyTrack = document.querySelector(".history-track");
 

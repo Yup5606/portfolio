@@ -74,7 +74,6 @@
     padding-top: 0;
   }
 
-  .keyword-list,
   .contact-strip,
   .about-section-head,
   .skill-grid,
@@ -88,6 +87,33 @@
 
   .about-section-head {
     gap: 12px;
+  }
+
+  .keyword-card {
+    padding: 18px;
+  }
+
+  .keyword-tab-list {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .keyword-tab {
+    width: 100%;
+    padding: 0 10px;
+    font-size: 11px;
+  }
+
+  .keyword-panel {
+    min-height: 260px;
+  }
+
+  .project-scope-grid {
+    flex-direction: column;
+  }
+
+  .project-scope-card {
+    min-height: 260px;
   }
 
   .history-track {
@@ -169,6 +195,27 @@
     gap: 24px;
     padding: 24px;
   }
+
+  .tool-category-head {
+    min-height: auto;
+    gap: 10px;
+  }
+
+  .tool-list {
+    grid-template-columns: 1fr;
+  }
+
+  .tool-item,
+  .tool-item[open] {
+    width: 100%;
+    height: auto;
+    min-width: 0;
+    min-height: 62px;
+  }
+
+  .tool-item[open] {
+    min-height: 148px;
+  }
 }
 
 /* 태블릿 구간 */
@@ -217,8 +264,16 @@
   }
 
   .tool-category-card {
-    grid-template-columns: 0.26fr 1fr;
+    grid-template-columns: 180px minmax(0, 1fr);
     gap: 24px;
+  }
+
+  .tool-category-head {
+    min-height: 132px;
+  }
+
+  .tool-list {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
 
@@ -233,7 +288,8 @@
   .about-side-title,
   .about-photo-wrap,
   .skill-card,
-  .keyword-list li::before,
+  .keyword-tab,
+  .keyword-panel::before,
   .contact-card {
     transition: none;
   }

@@ -6,9 +6,10 @@
     <link rel="icon" type="image/svg+xml" href="image/common/youbin.svg" />
     <title>About | Park Yubin Portfolio</title>
     <link rel="stylesheet" href="css/common.css" />
-    <link rel="stylesheet" href="css/about.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@600;700&display=swap" />
+    <link rel="stylesheet" href="css/about.css?v=about-tool-stable" />
     <link rel="stylesheet" href="css/common_rwd.css" />
-    <link rel="stylesheet" href="css/about_rwd.css" />
+    <link rel="stylesheet" href="css/about_rwd.css?v=about-tool-stable" />
     <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css" />
   </head>
   <body class="about-page">
@@ -17,10 +18,10 @@
 
     <!--우측 메뉴 영역-->
     <aside class="about-side-nav" aria-label="About page navigation">
-      <a href="project-index.html" aria-label="Projects">Prj</a>
+      <a href="#about" aria-label="About">Me</a>
       <a href="#history" aria-label="History">His</a>
-      <a href="#skills" aria-label="Skills">Skill</a>
-      <a href="#tools" aria-label="Tools">Tool</a>
+      <a href="#skills" aria-label="Work scope">Scp</a>
+      <a href="#tools" aria-label="Tools">Tls</a>
       <a href="#contact" aria-label="Contact">Con</a>
     </aside>
 
@@ -28,7 +29,7 @@
     <main class="about-main">
       <!--소개 영역-->
       <section class="about-hero" id="about">
-        <p class="about-side-title" data-aos="fade-up">WEB<br />PUBLISHER</p>
+        <p class="about-side-title" data-aos="fade-up">UIUX<br />Designer</p>
 
         <div class="about-photo-wrap" data-aos="fade-up" data-aos-delay="80">
           <img class="about-photo" src="image/common/profile.jpg" alt="박유빈 프로필 사진" />
@@ -38,13 +39,51 @@
           <p class="about-label">About me</p>
           <h1>
             안녕하세요.<br />
-            사용자 경험을 고민하는<br />
-            디자이너 & 웹 퍼블리셔 <strong>박유빈</strong>입니다.
+            물리적 공간에서 5년간 동선을 설계한 경험을 바탕으로<br />
+            디지털 환경에서도 사용자가 길을 잃지 않는 유저 플로우를 설계하는 UI/UX 디자이너 <strong>박유빈</strong>입니다.
           </h1>
           <p>
-            사용자의 입장에서 생각하고, 가치 있는 디자인을 추구합니다.<br />
-            빛나는 아이디어를 현실로 구현하는 디자이너 & 웹 퍼블리셔가 되고 싶습니다.
+            공간 연출 현장에서 익힌 관찰력과 구조화 능력을 정보의 우선순위, 화면 흐름, 반응형 구현으로 연결합니다.<br />
+            사용자가 자연스럽게 목적지에 도달하는 경험을 만들고자 합니다.
           </p>
+        </div>
+
+        <div class="keyword-card" data-aos="fade-up" data-aos-delay="180">
+          <div class="keyword-tab-list" role="tablist" aria-label="박유빈의 디자인 접근 방식">
+            <button class="keyword-tab is-active" id="keyword-tab-1" type="button" role="tab" aria-selected="true" aria-controls="keyword-panel-1" data-keyword-tab>
+              Spatial Flow
+            </button>
+            <button class="keyword-tab" id="keyword-tab-2" type="button" role="tab" aria-selected="false" aria-controls="keyword-panel-2" data-keyword-tab>
+              User Flow
+            </button>
+            <button class="keyword-tab" id="keyword-tab-3" type="button" role="tab" aria-selected="false" aria-controls="keyword-panel-3" data-keyword-tab>
+              Visual System
+            </button>
+            <button class="keyword-tab" id="keyword-tab-4" type="button" role="tab" aria-selected="false" aria-controls="keyword-panel-4" data-keyword-tab>
+              Implementation
+            </button>
+          </div>
+
+          <div class="keyword-panel is-active" id="keyword-panel-1" role="tabpanel" aria-labelledby="keyword-tab-1" data-keyword-panel>
+            <span>01</span>
+            <strong>공간에서 시선과 이동 흐름을 읽는 감각이 있습니다.</strong>
+            <p>촬영 세트와 공간 연출 경험을 바탕으로 사용자가 어디서 멈추고, 무엇을 먼저 보고, 다음에 어디로 이동해야 하는지 구조화할 수 있습니다.</p>
+          </div>
+          <div class="keyword-panel" id="keyword-panel-2" role="tabpanel" aria-labelledby="keyword-tab-2" data-keyword-panel hidden>
+            <span>02</span>
+            <strong>복잡한 정보를 목적 중심의 흐름으로 정리할 수 있습니다.</strong>
+            <p>브랜드 소개, 제품, ESG, 채용처럼 흩어진 콘텐츠를 사용자의 탐색 목적에 맞춰 묶고 우선순위를 세우는 역량이 있습니다.</p>
+          </div>
+          <div class="keyword-panel" id="keyword-panel-3" role="tabpanel" aria-labelledby="keyword-tab-3" data-keyword-panel hidden>
+            <span>03</span>
+            <strong>브랜드 무드를 화면 위계와 컴포넌트로 옮길 수 있습니다.</strong>
+            <p>톤앤매너, 컬러, 타이포그래피, 이미지 사용 기준을 정리해 페이지마다 일관된 브랜드 경험이 이어지도록 설계합니다.</p>
+          </div>
+          <div class="keyword-panel" id="keyword-panel-4" role="tabpanel" aria-labelledby="keyword-tab-4" data-keyword-panel hidden>
+            <span>04</span>
+            <strong>디자인 의도를 반응형 화면과 인터랙션으로 구현할 수 있습니다.</strong>
+            <p>Figma 시안을 HTML, CSS, JavaScript 기반의 반응형 화면으로 옮기고, 사용자의 행동을 돕는 인터랙션까지 연결합니다.</p>
+          </div>
         </div>
 
       </section>
@@ -53,7 +92,7 @@
       <section class="about-section history-section" id="history">
         <div class="about-section-head" data-aos="fade-up">
           <p class="about-label">History</p>
-          <h2>지금까지의 경험 입니다.</h2>
+          <h2>지금까지의 경험입니다.</h2>
         </div>
         <div class="history-track">
           <ol class="history-list">
@@ -110,45 +149,91 @@
         </div>
       </section>
 
-      <!--스킬 영역-->
+      <!--업무 범위 영역-->
       <section class="about-section skill-section" id="skills">
         <div class="about-section-head" data-aos="fade-up">
-          <p class="about-label">Skills</p>
-          <h2>프로젝트를 통해 익힌 역량입니다.</h2>
+          <p class="about-label">Work Scope</p>
+          <h2>맡을 수 있는 업무와 프로젝트별 수행 범위입니다.</h2>
         </div>
         <div class="skill-grid">
-          <article class="skill-card about-card-base" data-percent="90%" data-aos="fade-up">
+          <article class="skill-card about-card-base" data-aos="fade-up">
             <span class="skill-mark">01</span>
-            <h3>Design</h3>
-            <p>Figma, Photoshop, Illustrator를 활용해 화면 구조와 비주얼 톤을 설계합니다.</p>
-            <div class="skill-bar" aria-label="Design level">
-              <span></span><em>90%</em>
-            </div>
+            <h3>UX Planning</h3>
+            <p>기존 화면의 문제를 찾고 사용자 목적에 맞춰 정보 구조, 콘텐츠 우선순위, 주요 이동 흐름을 재정리할 수 있습니다.</p>
+            <ul class="skill-scope-list">
+              <li>문제 정의</li>
+              <li>IA 정리</li>
+              <li>와이어프레임</li>
+            </ul>
           </article>
-          <article class="skill-card about-card-base" data-percent="80%" data-aos="fade-up" data-aos-delay="80">
+          <article class="skill-card about-card-base" data-aos="fade-up" data-aos-delay="80">
             <span class="skill-mark">02</span>
-            <h3>Publishing</h3>
-            <p>HTML, CSS, JavaScript 기반으로 반응형 화면과 인터랙션을 구현합니다.</p>
-            <div class="skill-bar" aria-label="Publishing level">
-              <span></span><em>80%</em>
-            </div>
+            <h3>UI Design</h3>
+            <p>브랜드 무드와 화면 위계를 연결해 메인·서브 페이지의 시각 시스템과 반응형 레이아웃을 설계할 수 있습니다.</p>
+            <ul class="skill-scope-list">
+              <li>Figma UI</li>
+              <li>디자인 시스템</li>
+              <li>반응형 시안</li>
+            </ul>
           </article>
-          <article class="skill-card about-card-base" data-percent="85%" data-aos="fade-up" data-aos-delay="160">
+          <article class="skill-card about-card-base" data-aos="fade-up" data-aos-delay="160">
             <span class="skill-mark">03</span>
-            <h3>Idea</h3>
-            <p>사용자 중심의 문제를 찾고, 프로젝트 성격에 맞는 방향을 제안합니다.</p>
-            <div class="skill-bar" aria-label="Idea level">
-              <span></span><em>85%</em>
-            </div>
+            <h3>Publishing</h3>
+            <p>HTML, CSS, JavaScript를 기반으로 시맨틱 마크업, 인터랙션, 반응형 화면 구현과 배포가 가능합니다.</p>
+            <ul class="skill-scope-list">
+              <li>HTML/CSS</li>
+              <li>JavaScript</li>
+              <li>Netlify 배포</li>
+            </ul>
           </article>
-          <article class="skill-card about-card-base" data-percent="90%" data-aos="fade-up" data-aos-delay="240">
+          <article class="skill-card about-card-base" data-aos="fade-up" data-aos-delay="240">
             <span class="skill-mark">04</span>
-            <h3>Communication</h3>
-            <p>협업 과정에서 내용을 정리하고 일정과 결과물을 꾸준히 맞춥니다.</p>
-            <div class="skill-bar" aria-label="Communication level">
-              <span></span><em>90%</em>
-            </div>
+            <h3>Workflow</h3>
+            <p>프로젝트 이슈를 문서화하고 GitHub 기반 협업, 브라우저 오류 점검, 발표 자료 정리까지 수행할 수 있습니다.</p>
+            <ul class="skill-scope-list">
+              <li>GitHub</li>
+              <li>Notion</li>
+              <li>디버깅</li>
+            </ul>
           </article>
+        </div>
+
+        <div class="project-scope-wrap" data-aos="fade-up">
+          <div class="project-scope-head">
+            <span>Project Evidence</span>
+          </div>
+          <div class="project-scope-grid" aria-label="프로젝트별 수행 범위">
+            <article class="project-scope-card project-scope-card--parley">
+              <span>Parley</span>
+              <h3>Team Project Leadership</h3>
+              <p>팀 프로젝트의 리더로 핵심 페이지 UI, 히어로 영상, 주요 퍼블리싱, GitHub 병합과 오류 개선을 담당했습니다.</p>
+              <ul>
+                <li>팀 리딩</li>
+                <li>핵심 UI 설계</li>
+                <li>병합 및 디버깅</li>
+              </ul>
+            </article>
+            <article class="project-scope-card project-scope-card--lotte">
+              <span>Lotte GRS</span>
+              <h3>Corporate Website Renewal</h3>
+              <p>기업 메인 페이지의 콘텐츠 우선순위와 브랜드 탐색 흐름을 재정리하고, 반응형 메인 화면을 디자인·퍼블리싱했습니다.</p>
+              <ul>
+                <li>기획 및 문제 정의</li>
+                <li>메인 UI 설계</li>
+                <li>반응형 퍼블리싱</li>
+              </ul>
+            </article>
+            <article class="project-scope-card project-scope-card--rockfish">
+              <span>Rockfish</span>
+              <h3>Brand Experience Redesign</h3>
+              <p>제품 중심으로 흩어진 탐색 경험을 브랜드 무드와 사용자 흐름 중심으로 재구성하고 비주얼 시스템을 구축했습니다.</p>
+              <ul>
+                <li>브랜드 무드 분석</li>
+                <li>UX 흐름 재설계</li>
+                <li>인터랙션 구현</li>
+              </ul>
+            </article>
+          </div>
         </div>
       </section>
 
@@ -156,7 +241,7 @@
       <section class="about-section license-section">
         <div class="about-section-head" data-aos="fade-up">
           <p class="about-label">License</p>
-          <h2>배우고 익힌 과정입니다.</h2>
+          <h2>취득한 자격과 수료 이력입니다.</h2>
         </div>
         <div class="license-panel">
           <article class="license-card about-card-base" data-aos="fade-up">
@@ -190,7 +275,7 @@
       <section class="about-section tool-section" id="tools">
         <div class="about-section-head" data-aos="fade-up">
           <p class="about-label">Tools</p>
-          <h2>디자인과 개발 과정에 활용하고 있습니다.</h2>
+          <h2>디자인과 구현 단계에 맞춰 활용하는 도구입니다.</h2>
         </div>
         <div class="tool-category-grid">
           <article class="tool-category-card about-card-base" data-aos="fade-up">
@@ -199,11 +284,26 @@
               <h3>Design</h3>
             </div>
             <div class="tool-list">
-              <span class="tool-item" data-percent="90%"><img src="image/common/icon/figma_icon.svg" alt="" />Figma</span>
-              <span class="tool-item" data-percent="90%"><img src="image/common/icon/photoshop_icon.svg" alt="" />Photoshop</span>
-              <span class="tool-item" data-percent="80%"><img src="image/common/icon/illrst_icon.svg" alt="" />Illustrator</span>
-              <span class="tool-item" data-percent="70%"><img src="image/common/icon/premier_icon.svg" alt="" />Premiere Pro</span>
-              <span class="tool-item" data-percent="70%"><img src="image/common/icon/apec_logo.svg" alt="" />After Effects</span>
+              <details class="tool-item">
+                <summary><img src="image/common/icon/figma_icon.svg" alt="" /><strong>Figma</strong></summary>
+                <p>IA 정리, 와이어프레임, 반응형 UI 시안, 컴포넌트와 디자인 시스템 정리까지 연결해 활용합니다.</p>
+              </details>
+              <details class="tool-item">
+                <summary><img src="image/common/icon/photoshop_icon.svg" alt="" /><strong>Photoshop</strong></summary>
+                <p>웹 비주얼에 필요한 이미지 보정, 합성, 목업 제작, 배너용 에셋 정리를 수행할 수 있습니다.</p>
+              </details>
+              <details class="tool-item">
+                <summary><img src="image/common/icon/illrst_icon.svg" alt="" /><strong>Illustrator</strong></summary>
+                <p>로고, 아이콘, 간단한 그래픽 요소를 벡터 기반으로 제작하고 웹용 에셋으로 정리할 수 있습니다.</p>
+              </details>
+              <details class="tool-item">
+                <summary><img src="image/common/icon/premier_icon.svg" alt="" /><strong>Premiere Pro</strong></summary>
+                <p>프로젝트 히어로와 브랜드 무드를 강화하는 짧은 영상 편집과 컷 구성 작업 경험이 있습니다.</p>
+              </details>
+              <details class="tool-item">
+                <summary><img src="image/common/icon/apec_logo.svg" alt="" /><strong>After Effects</strong></summary>
+                <p>간단한 모션 그래픽과 전환 효과를 제작해 웹 비주얼의 몰입감을 높일 수 있습니다.</p>
+              </details>
             </div>
           </article>
           <article class="tool-category-card about-card-base" data-aos="fade-up" data-aos-delay="80">
@@ -212,14 +312,38 @@
               <h3>Coding</h3>
             </div>
             <div class="tool-list">
-              <span class="tool-item" data-percent="80%"><img src="image/common/icon/html5_logo.svg" alt="" />HTML5</span>
-              <span class="tool-item" data-percent="80%"><img src="image/common/icon/css3_logo.svg" alt="" />CSS3</span>
-              <span class="tool-item" data-percent="70%"><img src="image/common/icon/js_logo.svg" alt="" />JavaScript</span>
-              <span class="tool-item" data-percent="80%"><img src="image/common/icon/vscode_icon.svg" alt="" />VS Code</span>
-              <span class="tool-item" data-percent="65%"><img src="image/common/icon/jquery_icon.svg" alt="" />jQuery</span>
-              <span class="tool-item" data-percent="80%"><img src="image/common/icon/aos_icon.svg" alt="" />AOS</span>
-              <span class="tool-item" data-percent="70%"><img src="image/common/icon/swiper_logo.svg" alt="" />Swiper</span>
-              <span class="tool-item" data-percent="65%"><img src="image/common/icon/sass_logo.svg" alt="" />Sass</span>
+              <details class="tool-item">
+                <summary><img src="image/common/icon/html5_logo.svg" alt="" /><strong>HTML5</strong></summary>
+                <p>페이지 구조를 시맨틱 태그로 나누고, 접근성과 유지보수를 고려한 마크업을 작성할 수 있습니다.</p>
+              </details>
+              <details class="tool-item">
+                <summary><img src="image/common/icon/css3_logo.svg" alt="" /><strong>CSS3</strong></summary>
+                <p>그리드, 플렉스, clamp, 미디어쿼리를 활용해 데스크톱과 모바일 화면을 안정적으로 구성합니다.</p>
+              </details>
+              <details class="tool-item">
+                <summary><img src="image/common/icon/js_logo.svg" alt="" /><strong>JavaScript</strong></summary>
+                <p>탭, 모달, 스크롤 반응, 메뉴 상태처럼 사용자의 행동에 반응하는 인터랙션을 구현할 수 있습니다.</p>
+              </details>
+              <details class="tool-item">
+                <summary><img src="image/common/icon/vscode_icon.svg" alt="" /><strong>VS Code</strong></summary>
+                <p>프로젝트 구조를 나누고 HTML, CSS, JavaScript 파일을 관리하며 디버깅할 수 있습니다.</p>
+              </details>
+              <details class="tool-item">
+                <summary><img src="image/common/icon/jquery_icon.svg" alt="" /><strong>jQuery</strong></summary>
+                <p>기존 플러그인이나 DOM 제어가 필요한 화면에서 빠르게 이벤트와 상태를 연결할 수 있습니다.</p>
+              </details>
+              <details class="tool-item">
+                <summary><img src="image/common/icon/aos_icon.svg" alt="" /><strong>AOS</strong></summary>
+                <p>스크롤 진입 타이밍에 맞춰 과하지 않은 모션을 적용하고 페이지 리듬을 조정합니다.</p>
+              </details>
+              <details class="tool-item">
+                <summary><img src="image/common/icon/swiper_logo.svg" alt="" /><strong>Swiper</strong></summary>
+                <p>브랜드 이미지, 카드 리스트, 모바일 콘텐츠를 슬라이드 UI로 구성하고 반응형 옵션을 조정할 수 있습니다.</p>
+              </details>
+              <details class="tool-item">
+                <summary><img src="image/common/icon/sass_logo.svg" alt="" /><strong>Sass</strong></summary>
+                <p>반복되는 스타일 값을 정리하고 섹션 단위로 스타일을 관리하는 방식에 익숙합니다.</p>
+              </details>
             </div>
           </article>
           <article class="tool-category-card about-card-base" data-aos="fade-up" data-aos-delay="160">
@@ -228,10 +352,22 @@
               <h3>Collaboration</h3>
             </div>
             <div class="tool-list">
-              <span class="tool-item" data-percent="85%"><img src="image/common/icon/github_logo.svg" alt="" />GitHub</span>
-              <span class="tool-item" data-percent="70%"><img src="image/common/icon/notion_icon.svg" alt="" />Notion</span>
-              <span class="tool-item" data-percent="80%"><img src="image/common/icon/netlipy_icon.svg" alt="" />Netlify</span>
-              <span class="tool-item" data-percent="70%"><img src="image/common/icon/filezila_logo.svg" alt="" />FileZilla</span>
+              <details class="tool-item">
+                <summary><img src="image/common/icon/github_logo.svg" alt="" /><strong>GitHub</strong></summary>
+                <p>브랜치 관리, 소스 병합, 배포 이력 확인, 협업 중 발생한 충돌과 오류를 점검할 수 있습니다.</p>
+              </details>
+              <details class="tool-item">
+                <summary><img src="image/common/icon/notion_icon.svg" alt="" /><strong>Notion</strong></summary>
+                <p>회의 내용, 역할 분담, 일정, 리서치 근거를 문서화해 프로젝트 흐름을 정리할 수 있습니다.</p>
+              </details>
+              <details class="tool-item">
+                <summary><img src="image/common/icon/netlipy_icon.svg" alt="" /><strong>Netlify</strong></summary>
+                <p>정적 웹사이트를 배포하고 수정 사항이 실제 URL에 반영되는지 확인할 수 있습니다.</p>
+              </details>
+              <details class="tool-item">
+                <summary><img src="image/common/icon/filezila_logo.svg" alt="" /><strong>FileZilla</strong></summary>
+                <p>서버 업로드가 필요한 상황에서 파일 구조를 확인하고 필요한 리소스를 전송할 수 있습니다.</p>
+              </details>
             </div>
           </article>
           <article class="tool-category-card about-card-base" data-aos="fade-up" data-aos-delay="240">
@@ -240,10 +376,22 @@
               <h3>AI Tools</h3>
             </div>
             <div class="tool-list">
-              <span class="tool-item" data-percent="85%"><img src="image/common/icon/codex_logo.svg" alt="" />Codex</span>
-              <span class="tool-item" data-percent="80%"><img src="image/common/icon/chatgpt_icon.svg" alt="" />ChatGPT</span>
-              <span class="tool-item" data-percent="75%"><img src="image/common/icon/gamini_logo.svg" alt="" />Gemini</span>
-              <span class="tool-item" data-percent="70%"><img src="image/common/icon/kling_logo.svg" alt="" />Kling</span>
+              <details class="tool-item">
+                <summary><img src="image/common/icon/codex_logo.svg" alt="" /><strong>Codex</strong></summary>
+                <p>코드 구조 점검, 오류 원인 탐색, 반복 작업 정리처럼 퍼블리싱 과정의 생산성을 높이는 데 활용합니다.</p>
+              </details>
+              <details class="tool-item">
+                <summary><img src="image/common/icon/chatgpt_icon.svg" alt="" /><strong>ChatGPT</strong></summary>
+                <p>리서치 정리, 문장 다듬기, UX 개선 방향 비교처럼 기획과 문서화 과정에 활용합니다.</p>
+              </details>
+              <details class="tool-item">
+                <summary><img src="image/common/icon/gamini_logo.svg" alt="" /><strong>Gemini</strong></summary>
+                <p>다양한 관점의 아이디어를 빠르게 비교하고 콘텐츠 구조를 확장하는 데 활용합니다.</p>
+              </details>
+              <details class="tool-item">
+                <summary><img src="image/common/icon/kling_logo.svg" alt="" /><strong>Kling</strong></summary>
+                <p>브랜드 무드를 보여주는 영상 소스와 비주얼 레퍼런스를 생성하는 데 활용합니다.</p>
+              </details>
             </div>
           </article>
         </div>
@@ -273,6 +421,6 @@
     <script src="js/common.js"></script>
     <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
     <script src="js/subpage.js"></script>
-    <script src="js/about.js"></script>
+    <script src="js/about.js?v=about-tool-stable"></script>
   </body>
 </html>
