@@ -636,9 +636,8 @@
   border-radius: var(--radius-pill);
   color: #fff;
   font-size: 12px;
-  font-weight: 900;
+  font-weight: 600;
   background: var(--about-accent);
-  box-shadow: 0 8px 18px rgba(63, 95, 85, 0.14);
 }
 .project-scope-wrap {
   padding: clamp(22px, 2.6vw, 34px);
@@ -677,15 +676,6 @@
     background 0.28s ease,
     transform 0.28s ease;
 }
-.project-scope-card::before {
-  position: absolute;
-  top: 0;
-  right: 0;
-  left: 0;
-  height: 5px;
-  content: "";
-  background: var(--about-accent);
-}
 .project-scope-card:hover {
   border-color: rgba(63, 95, 85, 0.26);
   background: rgba(255, 255, 255, 0.74);
@@ -710,7 +700,6 @@
   margin: 0 0 14px;
   color: var(--about-ink);
   font-size: clamp(20px, 1.35vw, 28px);
-  font-weight: 900;
   letter-spacing: -0.03em;
 }
 .project-scope-card p {

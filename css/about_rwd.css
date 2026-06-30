@@ -113,7 +113,8 @@
   }
 
   .project-scope-card {
-    min-height: 260px;
+    min-height: auto;
+    overflow: visible;
   }
 
   .history-track {
