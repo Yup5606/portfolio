@@ -4,8 +4,14 @@
   .lotte-goal-diagram {
     gap: 18px;
   }
+  .lotte-goal-column {
+    gap: 18px;
+  }
   .lotte-goal-visual {
-    margin-bottom: 18px;
+    order: -1;
+    width: min(68vw, 280px);
+    height: min(68vw, 280px);
+    margin: 0 auto 20px;
   }
 }
 
@@ -215,14 +221,19 @@
     font-size: 16px;
   }
   .lotte-goal-diagram {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    align-items: stretch;
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+  }
+  .lotte-goal-column {
     gap: 22px;
   }
   .lotte-goal-visual {
-    grid-column: 1 / -1;
+    order: -1;
+    justify-self: center;
     width: 320px;
     height: 320px;
+    margin: 0 auto 26px;
   }
   .lotte-goal-card {
     min-height: 174px;
@@ -675,18 +686,28 @@
     font-size: clamp(16px, 1vw, 19px);
   }
   .lotte-goal-diagram {
-    display: grid;
-    grid-template-columns: minmax(270px, 0.72fr) minmax(520px, 0.95fr) minmax(270px, 0.72fr);
-    grid-template-rows: 1fr 1fr;
+    display: flex;
+    flex-direction: row;
     align-items: center;
-    gap: clamp(18px, 2.4vw, 52px);
-    min-height: clamp(500px, 37vw, 650px);
+    justify-content: center;
+    gap: clamp(32px, 3.6vw, 68px);
+  }
+  .lotte-goal-column {
+    flex: 0 1 clamp(260px, 22vw, 390px);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: clamp(80px, 8vw, 140px);
+    max-width: 390px;
+    min-width: 0;
+    min-height: clamp(360px, 29vw, 445px);
   }
   .lotte-goal-visual {
-    grid-column: 2;
-    grid-row: 1 / span 2;
-    order: 0;
-    width: min(100%, 677px);
+    position: relative;
+    flex: 0 0 clamp(390px, 32vw, 560px);
+    width: clamp(390px, 32vw, 560px);
+    height: auto;
+    margin: 0;
     border: 0;
     border-radius: 0;
     aspect-ratio: auto;
@@ -700,6 +721,7 @@
   }
   .lotte-goal-card {
     position: relative;
+    width: 100%;
     min-height: auto;
     padding: 0;
     border: 0;
@@ -713,28 +735,6 @@
     max-width: 370px;
     margin-top: 4px;
     font-size: clamp(14px, 0.9vw, 17px);
-  }
-  .lotte-goal-card--brand,
-  .lotte-goal-card--esg {
-    grid-column: 1;
-    text-align: left;
-  }
-  .lotte-goal-card--user,
-  .lotte-goal-card--business {
-    grid-column: 3;
-    text-align: left;
-  }
-  .lotte-goal-card--brand,
-  .lotte-goal-card--user {
-    grid-row: 1;
-    align-self: start;
-    margin-top: clamp(40px, 5vw, 92px);
-  }
-  .lotte-goal-card--esg,
-  .lotte-goal-card--business {
-    grid-row: 2;
-    align-self: end;
-    margin-bottom: clamp(40px, 5vw, 92px);
   }
   .lotte-goal-core {
     width: 45%;

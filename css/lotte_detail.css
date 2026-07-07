@@ -23,15 +23,22 @@
 }
 .lotte-goal-diagram {
   position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.lotte-goal-column {
   display: grid;
   gap: 30px;
+  min-width: 0;
 }
 .lotte-goal-visual {
   position: relative;
   display: grid;
   place-items: center;
   justify-self: center;
-  margin: 40px;
+  align-self: center;
+  margin: 0 auto;
   width: 250px;
   height: 250px;
   border-radius: 50%;
