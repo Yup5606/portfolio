@@ -30,8 +30,8 @@
   --font-playfair: "Playfair Display", Georgia, "Times New Roman", serif;
   --font-wild: "Wild Youth", "Pretendard Variable", "Pretendard", "Apple SD Gothic Neo", "Noto Sans KR", Arial, sans-serif;
   --font-hand: "KyoboHandwriting2020ParkDoYeon", "Pretendard Variable", "Pretendard", "Apple SD Gothic Neo", "Noto Sans KR", Arial, sans-serif;
-  --project-body-font-size: 12px;
-  --project-title-font-size: 18px;
+  --project-body-font-size: 11px;
+  --project-title-font-size: 17px;
   --project-skill-icon-size: 48px;
 }
 
@@ -221,7 +221,7 @@ button {
   margin: 0 0 clamp(18px, 1.7vw, 28px);
   color: var(--white);
   font-family: var(--font-sans);
-  font-size: clamp(34px, 9.8vw, 48px);
+  font-size: clamp(33px, 9.4vw, 47px);
   font-weight: 700;
   line-height: 1;
   letter-spacing: 0;
@@ -328,7 +328,7 @@ button {
 }
 .image-story h2 {
   margin: 12px 0 22px;
-  font-size: clamp(24px, 4vw, 64px);
+  font-size: clamp(23px, 3.9vw, 63px);
   font-weight: 700;
   line-height: 1.12;
   letter-spacing: 0;
@@ -337,7 +337,7 @@ button {
   max-width: 620px;
   margin: 0;
   color: rgba(255, 255, 255, 0.78);
-  font-size: clamp(16px, 1.18vw, 21px);
+  font-size: clamp(15px, 1.1vw, 20px);
   line-height: 1.75;
 }
 .content-section {
@@ -367,7 +367,7 @@ button {
   max-width: 920px;
   margin: 0;
   color: var(--ink);
-  font-size: clamp(32px, 4vw, 72px);
+  font-size: clamp(31px, 3.9vw, 71px);
   font-weight: 800;
   line-height: 1.14;
   letter-spacing: 0;
@@ -484,7 +484,7 @@ button {
 }
 .image-story h2,
 .section-heading h2 {
-  font-size: clamp(30px, 9vw, 48px);
+  font-size: clamp(29px, 8.5vw, 47px);
 }
 .screen-grid,
 .frame-grid,

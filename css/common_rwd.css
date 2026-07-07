@@ -1,8 +1,8 @@
 /*반응형 영역*/
 @media (min-width: 769px) {
   :root {
-    --project-title-font-size: clamp(24px, 2.3vw, 32px);
-    --project-body-font-size: clamp(14px, 1.25vw, 16px);
+    --project-title-font-size: clamp(23px, 2.2vw, 31px);
+    --project-body-font-size: clamp(13px, 1.18vw, 15px);
     --project-skill-icon-size: clamp(64px, 5vw, 80px);
   }
   .site-nav,
@@ -58,32 +58,33 @@
     grid-template-columns: repeat(4, minmax(180px, 1fr));
   }
   .project-showcase-hero {
-    min-height: max(100vh, 860px);
+    min-height: clamp(760px, 52vw, 820px);
     padding: clamp(96px, 6.5vw, 132px) 100px clamp(34px, 2.5vw, 48px);
   }
   .project-showcase-circle {
-    top: min(-72vw, -840px);
-    width: min(142vw, 2100px);
-    min-width: 980px;
+    top: clamp(-760px, -48vw, -620px);
+    width: min(110vw, 1540px);
+    min-width: 1180px;
   }
   .project-showcase-logo {
     width: clamp(130px, 12vw, 230px);
     margin: 0 auto clamp(24px, 2.8vw, 44px);
   }
   .project-showcase-copy h1 {
-    font-size: clamp(40px, 4.2vw, 72px);
+    font-size: clamp(39px, 4.1vw, 71px);
   }
   .project-showcase-copy p {
-    font-size: clamp(17px, 1.32vw, 24px);
+    font-size: clamp(16px, 1.24vw, 23px);
   }
   .project-showcase-mockup {
-    width: min(74vw, 1180px);
-    margin: clamp(42px, 4.2vw, 78px) auto clamp(110px, 9vw, 156px);
+    width: min(56vw, 720px);
+    max-width: 720px;
+    margin: clamp(38px, 3.2vw, 58px) auto clamp(110px, 9vw, 156px);
   }
   .project-showcase-actions {
     position: absolute;
     right: auto;
-    bottom: clamp(100px, 8vw, 142px);
+    bottom: clamp(58px, 4vw, 76px);
     left: 50%;
     gap: 28px;
     width: auto;
@@ -95,12 +96,12 @@
     min-width: 190px;
     min-height: 54px;
     padding: 0 26px;
-    font-size: 18px;
+    font-size: 17px;
   }
   .project-showcase-details {
     position: absolute;
     right: 100px;
-    bottom: clamp(28px, 2.4vw, 42px);
+    bottom: clamp(22px, 2vw, 34px);
     left: 100px;
     align-items: flex-end;
     gap: 0;
@@ -109,40 +110,41 @@
   }
   .project-showcase-info {
     flex: 0 1 auto;
-    font-size: clamp(14px, 1.2vw, 24px);
+    font-size: clamp(13px, 1.1vw, 23px);
   }
   .project-showcase-info strong {
-    font-size: clamp(18px, 1.6vw, 26px);
+    font-size: clamp(17px, 1.5vw, 25px);
   }
 }
 @media (min-width: 769px) and (max-width: 1280px) {
   .project-showcase-hero {
     display: block;
-    min-height: max(100vh, 820px);
+    min-height: 760px;
     padding-top: 112px;
     padding-bottom: 40px;
   }
   .project-showcase-circle {
-    top: -760px;
-    width: 1420px;
-    min-width: 1420px;
+    top: -650px;
+    width: 1320px;
+    min-width: 1320px;
   }
   .project-showcase-logo {
     width: clamp(150px, 15vw, 190px);
     margin-bottom: 28px;
   }
   .project-showcase-copy p {
-    font-size: clamp(17px, 1.8vw, 21px);
+    font-size: clamp(16px, 1.65vw, 20px);
   }
   .project-showcase-mockup {
-    width: min(86vw, 920px);
-    margin-top: 48px;
-    margin-bottom: 20%;
+    width: min(76vw, 760px);
+    max-width: 760px;
+    margin-top: 44px;
+    margin-bottom: 12%;
   }
   .project-showcase-actions {
     position: absolute;
     left: 50%;
-    bottom: 104px;
+    bottom: 72px;
     gap: 18px;
     width: auto;
     margin-top: 0;
@@ -152,12 +154,12 @@
     flex: 0 0 auto;
     min-width: 170px;
     min-height: 50px;
-    font-size: 16px;
+    font-size: 15px;
   }
   .project-showcase-details {
     position: absolute;
     right: clamp(22px, 2vw, 34px);
-    bottom: 34px;
+    bottom: 26px;
     left: clamp(22px, 2vw, 34px);
     align-items: flex-end;
     width: auto;
@@ -165,10 +167,10 @@
   }
   .project-showcase-info {
     flex: 0 1 auto;
-    font-size: 14px;
+    font-size: 13px;
   }
   .project-showcase-info strong {
-    font-size: 19px;
+    font-size: 17px;
   }
   .image-story,
   .section-heading {
@@ -182,24 +184,25 @@
 }
 @media (min-width: 1281px) and (max-width: 1440px) {
   .project-showcase-hero {
-    min-height: max(100vh, 820px);
+    min-height: 760px;
   }
   .project-showcase-circle {
-    top: -920px;
-    width: 1820px;
-    min-width: 1820px;
+    top: -650px;
+    width: 1320px;
+    min-width: 1320px;
   }
   .project-showcase-logo {
     width: clamp(150px, 15vw, 190px);
-    margin-top: 50px;
-    margin-bottom: 50px;
+    margin-top: 30px;
+    margin-bottom: 34px;
   }
   .project-showcase-mockup {
-    width: min(78vw, 1060px);
-    margin-bottom: 136px;
+    width: min(58vw, 680px);
+    max-width: 680px;
+    margin-bottom: 118px;
   }
   .project-showcase-actions {
-    bottom: 104px;
+    bottom: 72px;
   }
   .content-section,
   .image-story {

@@ -11,7 +11,7 @@ h2 {
 
 h3 {
   margin: 0;
-  color: var(--parley-ink);
+  color: var(--parley-navy);
   letter-spacing: 0;
   font-weight: 700;
   line-height: 1.35;
@@ -843,7 +843,7 @@ h3 {
   font-size: calc(var(--project-title-font-size) * 0.82);
   font-weight: 800;
   line-height: 1.25;
-  letter-spacing: 0;
+  letter-spacing: -3px;
 }
 .parley-type-scale div:nth-child(1) dt,
 .parley-type-scale div:nth-child(1) dd {

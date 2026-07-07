@@ -17,7 +17,7 @@
 
 @media (min-width: 769px) and (max-width: 1279px) {
   .lotte-hero .project-showcase-mockup {
-    width: min(54%, 400px);
+    width: min(50%, 360px);
   }
   .lotte-hero .project-showcase-actions {
     max-width: none;
@@ -377,7 +377,8 @@
     width: clamp(92px, 7vw, 128px);
   }
   .lotte-hero .project-showcase-mockup {
-    width: min(48vw, 720px);
+    width: min(30vw, 430px);
+    max-width: 430px;
   }
   .lotte-hero .project-showcase-actions {
     max-width: none;
@@ -668,7 +669,7 @@
     padding: clamp(96px, 7vw, 138px) 100px;
   }
   .lotte-sitemap-figure img {
-    width: min(100%, 620px);
+    width: min(100%, 700px);
   }
 
   /* 프로젝트 목표 영역 */
@@ -914,7 +915,8 @@
 }
 @media (min-width: 1281px) and (max-width: 1440px) {
   .lotte-hero .project-showcase-mockup {
-    width: min(54%, 620px);
+    width: min(34vw, 410px);
+    max-width: 410px;
   }
   .lotte-overview-section {
     gap: 56px;

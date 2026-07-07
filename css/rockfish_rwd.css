@@ -183,7 +183,7 @@
     margin-bottom: 26px;
   }
   .rockfish-hero .project-showcase-mockup {
-    width: min(64%, 620px);
+    width: min(58%, 520px);
   }
   .rockfish-hero .project-showcase-actions {
     max-width: none;
@@ -664,10 +664,11 @@
     margin-bottom: clamp(28px, 2.4vw, 42px);
   }
   .rockfish-hero .project-showcase-copy h1 {
-    font-size: clamp(42px, 4.6vw, 78px);
+    font-size: clamp(41px, 4.5vw, 77px);
   }
   .rockfish-hero .project-showcase-mockup {
-    width: min(60vw, 900px);
+    width: min(42vw, 580px);
+    max-width: 580px;
   }
   .rockfish-hero .project-showcase-actions {
     max-width: none;
@@ -1265,7 +1266,8 @@
 }
 @media (min-width: 1281px) and (max-width: 1440px) {
   .rockfish-hero .project-showcase-mockup {
-    width: min(62%, 760px);
+    width: min(46vw, 560px);
+    max-width: 560px;
   }
   .rockfish-overview-inner {
     grid-template-columns: minmax(460px, 1fr) minmax(440px, 0.95fr);
