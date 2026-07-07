@@ -385,8 +385,10 @@
 /* 롯데 As is To be 영역 */
 .lotte-compare-section {
   display: grid;
+  grid-template-columns: minmax(0, 1fr);
   gap: 36px;
   padding: 76px 18px 100px;
+  overflow: hidden;
   color: var(--lotte-ink);
   background: transparent;
 }
@@ -453,35 +455,35 @@
 }
 .lotte-compare-point-list {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 26px;
+  flex-direction: column;
+  gap: 24px;
   margin: 0;
   padding: 0;
   list-style: none;
 }
 .lotte-compare-point-list li {
   display: flex;
-  flex: 1 1 320px;
-  align-items: center;
-  gap: 20px;
-  max-width: 430px;
+  align-items: flex-start;
+  gap: 18px;
+  min-width: 0;
+  padding: 0;
 }
 .lotte-compare-point-list > li > span {
   flex: 0 0 auto;
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 54px;
-  height: 54px;
+  width: 58px;
+  height: 58px;
   border-radius: 50%;
   color: var(--lotte-red);
   font-size: 26px;
   background: rgba(237, 28, 36, 0.08);
 }
 .lotte-compare-point-list div {
-  display: grid;
-  flex: 1 1 auto;
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 0;
   gap: 8px;
   min-width: 0;
 }
@@ -500,6 +502,7 @@
   font-weight: 500;
   line-height: 1.45;
   word-break: keep-all;
+  overflow-wrap: normal;
 }
 .lotte-compare-point-list em {
   color: #b8b8b8;
