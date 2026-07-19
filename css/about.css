@@ -1,7 +1,7 @@
 /*어바웃 페이지 영역*/
 .about-page {
   --font-serif:
-    "Nanum Myeongjo", "Noto Serif KR", Georgia, serif;
+    "Noto Serif KR", "Nanum Myeongjo", Georgia, serif;
   --font-ui: "Space Grotesk", "Pretendard", "Noto Sans KR", sans-serif;
   --about-bg: #eef2ef;
   --about-ink: #1d2522;

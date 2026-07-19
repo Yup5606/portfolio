@@ -1,10 +1,25 @@
 /*반응형 영역*/
 @media (max-width: 767px) {
+  .home-page,
+  .main-visual,
+  .main-panel {
+    min-height: 100dvh;
+  }
   .main-visual {
     touch-action: none;
   }
-  .panel-scroll {
-    display: none;
+  .panel-meta {
+    top: auto;
+    bottom: calc(32px + env(safe-area-inset-bottom));
+    gap: 1.15em;
+    padding: 0.9em 1.5em;
+    white-space: nowrap;
+  }
+  .panel-title-wrap {
+    bottom: calc(78px + env(safe-area-inset-bottom));
+  }
+  .main-panel .site-footer {
+    padding-bottom: calc(1em + env(safe-area-inset-bottom));
   }
   .index-hero {
     min-height: 54vh;

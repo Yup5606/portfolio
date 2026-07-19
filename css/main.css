@@ -250,6 +250,16 @@
   min-height: 100vh;
   overflow: hidden;
 }
+.main-visual::after {
+  position: absolute;
+  right: 0;
+  bottom: calc(clamp(82px, 13vh, 132px) + 17px);
+  left: 0;
+  z-index: 7;
+  border-top: 0.1em solid rgba(255, 255, 255, 0.7);
+  content: "";
+  pointer-events: none;
+}
 .main-panel {
   --cursor-x: 50%;
   --cursor-y: 50%;

@@ -1,5 +1,5 @@
 @import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.min.css");
-@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@400;500;600;700;900&family=Playfair+Display:wght@300;400;500;600;700&display=swap");
 
 /*폰트 영역*/
 @font-face {
@@ -26,7 +26,7 @@
   --footer-line: rgba(255, 255, 255, 0.7);
   --radius-pill: 999px;
   --font-sans: "Pretendard Variable", "Pretendard", "Apple SD Gothic Neo", "Noto Sans KR", Arial, sans-serif;
-  --font-serif: "열린명조", "Yeolrin Myeongjo", "YoonOpenMyeongjo", "Nanum Myeongjo", "Noto Serif KR", serif;
+  --font-serif: "Noto Serif KR", "열린명조", "Yeolrin Myeongjo", "YoonOpenMyeongjo", "Nanum Myeongjo", serif;
   --font-playfair: "Playfair Display", Georgia, "Times New Roman", serif;
   --font-wild: "Wild Youth", "Pretendard Variable", "Pretendard", "Apple SD Gothic Neo", "Noto Sans KR", Arial, sans-serif;
   --font-hand: "KyoboHandwriting2020ParkDoYeon", "Pretendard Variable", "Pretendard", "Apple SD Gothic Neo", "Noto Sans KR", Arial, sans-serif;
