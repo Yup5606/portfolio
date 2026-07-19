@@ -57,6 +57,13 @@
   const loaderDuration = 2200;
   const transitionDuration = 1180;
   const wheelThreshold = 80;
+  const swipeThreshold = 48;
+  let touchStartX = 0;
+  let touchStartY = 0;
+  let touchDeltaX = 0;
+  let touchDeltaY = 0;
+  let isSwipeGesture = false;
+  let suppressNextClick = false;
   let pageLoaded = document.readyState === "complete";
   let loaderFinished = false;
 
@@ -200,6 +207,68 @@
   }
 
   updateControls();
+
+  slider.addEventListener(
+    "touchstart",
+    (event) => {
+      if (event.touches.length !== 1 || document.body.classList.contains("is-loading")) {
+        return;
+      }
+
+      const touch = event.touches[0];
+      touchStartX = touch.clientX;
+      touchStartY = touch.clientY;
+      touchDeltaX = 0;
+      touchDeltaY = 0;
+      isSwipeGesture = false;
+    },
+    { passive: true }
+  );
+
+  slider.addEventListener(
+    "touchmove",
+    (event) => {
+      if (event.touches.length !== 1 || isChanging) {
+        return;
+      }
+
+      const touch = event.touches[0];
+      touchDeltaX = touch.clientX - touchStartX;
+      touchDeltaY = touch.clientY - touchStartY;
+
+      if (Math.max(Math.abs(touchDeltaX), Math.abs(touchDeltaY)) > 10) {
+        isSwipeGesture = true;
+        event.preventDefault();
+      }
+    },
+    { passive: false }
+  );
+
+  slider.addEventListener("touchend", () => {
+    const isHorizontal = Math.abs(touchDeltaX) > Math.abs(touchDeltaY);
+    const primaryDelta = isHorizontal ? touchDeltaX : touchDeltaY;
+
+    if (!isSwipeGesture || Math.abs(primaryDelta) < swipeThreshold || isChanging) {
+      return;
+    }
+
+    suppressNextClick = true;
+    showPanel(activeIndex + (primaryDelta < 0 ? 1 : -1));
+  });
+
+  slider.addEventListener(
+    "click",
+    (event) => {
+      if (!suppressNextClick) {
+        return;
+      }
+
+      event.preventDefault();
+      event.stopPropagation();
+      suppressNextClick = false;
+    },
+    true
+  );
 
   window.addEventListener(
     "wheel",

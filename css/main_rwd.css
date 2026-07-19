@@ -1,5 +1,11 @@
 /*반응형 영역*/
 @media (max-width: 767px) {
+  .main-visual {
+    touch-action: none;
+  }
+  .panel-scroll {
+    display: none;
+  }
   .index-hero {
     min-height: 54vh;
     padding: 92px 18px 18px;
