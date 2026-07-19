@@ -245,6 +245,7 @@
 
 /*메인 비주얼 영역*/
 .main-visual {
+  --panel-controls-bottom: clamp(82px, 13vh, 132px);
   position: relative;
   width: 100%;
   min-height: 100vh;
@@ -253,7 +254,7 @@
 .main-visual::after {
   position: absolute;
   right: 0;
-  bottom: calc(clamp(82px, 13vh, 132px) + 17px);
+  bottom: calc(var(--panel-controls-bottom) + 17px);
   left: 0;
   z-index: 7;
   border-top: 0.1em solid rgba(255, 255, 255, 0.7);
@@ -453,7 +454,7 @@
 .panel-controls {
   position: absolute;
   right: clamp(18px, 4vw, 100px);
-  bottom: clamp(82px, 13vh, 132px);
+  bottom: var(--panel-controls-bottom);
   z-index: 8;
   display: flex;
   align-items: center;

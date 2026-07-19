@@ -6,6 +6,7 @@
     min-height: 100dvh;
   }
   .main-visual {
+    --panel-controls-bottom: calc(132px + env(safe-area-inset-bottom));
     touch-action: none;
   }
   .panel-meta {
@@ -16,7 +17,14 @@
     white-space: nowrap;
   }
   .panel-title-wrap {
-    bottom: calc(78px + env(safe-area-inset-bottom));
+    right: 18px;
+    bottom: calc(94px + env(safe-area-inset-bottom));
+    left: 18px;
+    margin: 0;
+  }
+  .panel-title {
+    max-width: calc(100vw - 36px);
+    font-size: clamp(1.15em, 5.4vw, 1.35em);
   }
   .main-panel .site-footer {
     padding-bottom: calc(1em + env(safe-area-inset-bottom));
